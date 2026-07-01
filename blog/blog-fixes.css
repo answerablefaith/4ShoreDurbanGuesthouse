@@ -1,0 +1,68 @@
+/* 4Shore blog visibility and calmer background fixes */
+
+body.blog-page {
+  background: #fbf8f1 !important;
+}
+
+.blog-page .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  visibility: visible !important;
+}
+
+.blog-page .blog-hero {
+  min-height: 48vh !important;
+  padding-top: 8rem !important;
+  background:
+    linear-gradient(180deg, rgba(13, 35, 38, 0.78), rgba(13, 35, 38, 0.58)),
+    linear-gradient(135deg, #15383d 0%, #356f72 48%, #f7efe2 100%) !important;
+}
+
+.blog-page .blog-hero::after {
+  background: linear-gradient(180deg, transparent, #fbf8f1 92%) !important;
+}
+
+.blog-page .blog-hero-copy {
+  color: rgba(255, 250, 240, 0.9) !important;
+}
+
+.blog-page .blog-intro-panel {
+  margin-top: -2.25rem !important;
+}
+
+.blog-page .blog-note-card {
+  background:
+    linear-gradient(145deg, rgba(13, 35, 38, 0.96), rgba(35, 83, 86, 0.94)) !important;
+}
+
+.blog-page .article-card,
+.blog-page .blog-intro-card,
+.blog-page .blog-note-card,
+.blog-page .article-body,
+.blog-page .article-sidebar-card {
+  background-color: rgba(255, 250, 243, 0.94) !important;
+}
+
+.blog-page .article-hero {
+  min-height: 44vh !important;
+  background:
+    linear-gradient(180deg, rgba(13, 35, 38, 0.72), rgba(13, 35, 38, 0.58)),
+    linear-gradient(135deg, #15383d 0%, #356f72 54%, #f7efe2 100%) !important;
+}
+
+.blog-page .article-layout {
+  margin-top: -1.5rem !important;
+}
+
+@media (max-width: 760px) {
+  .blog-page .blog-hero,
+  .blog-page .article-hero {
+    min-height: 42vh !important;
+    padding-top: 7rem !important;
+  }
+
+  .blog-page .blog-intro-panel {
+    margin-top: -1.25rem !important;
+  }
+}
