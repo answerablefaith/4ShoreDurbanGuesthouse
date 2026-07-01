@@ -49,12 +49,13 @@ jobs:
           home.write_text(content)
 
           # Ensure the blog pages load the permanent override CSS.
-          version = "20260701-theme1"
+          version = "20260702-contrast-menu1"
           for path in Path("blog").rglob("index.html"):
               html = path.read_text()
               if "blog-fixes.css" in html:
                   html = html.replace("20260701-fix2", version)
                   html = html.replace("20260701-light1", version)
+                  html = html.replace("20260701-theme1", version)
                   path.write_text(html)
                   continue
 
