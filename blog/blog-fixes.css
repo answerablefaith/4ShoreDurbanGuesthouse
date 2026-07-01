@@ -1,4 +1,4 @@
-/* 4Shore blog visibility, lighter palette, and calmer background fixes */
+/* 4Shore blog visibility, lighter palette, and guest-facing copy fixes */
 
 body.blog-page {
   background: linear-gradient(180deg, #fbf8f1 0%, #f6eee1 100%) !important;
@@ -44,22 +44,71 @@ body.blog-page {
   text-shadow: none !important;
 }
 
-.blog-page .blog-hero h1 em {
-  color: #1c6378 !important;
-}
-
 .blog-page .blog-kicker,
 .blog-page .article-kicker {
   color: #8a6d2f !important;
 }
 
+.blog-page .blog-hero h1 {
+  font-size: 0 !important;
+  max-width: 980px !important;
+}
+
+.blog-page .blog-hero h1 > * {
+  display: none !important;
+}
+
+.blog-page .blog-hero h1::before {
+  content: "Beach stays, local tips and quiet Durban mornings";
+  display: block;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: clamp(2.6rem, 8vw, 6.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+  font-weight: 300;
+  color: #123034;
+}
+
 .blog-page .blog-hero-copy {
   max-width: 760px !important;
   color: #405a60 !important;
+  font-size: 0 !important;
+}
+
+.blog-page .blog-hero-copy::before {
+  content: "Simple guides for planning a stay near Anstey's Beach: where to sleep, what to pack, how to get around, and what to enjoy while you are here.";
+  font-size: clamp(1.05rem, 2vw, 1.32rem);
+  line-height: 1.7;
 }
 
 .blog-page .blog-intro-panel {
   margin-top: -1.5rem !important;
+}
+
+.blog-page .blog-intro-card > h2 {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-intro-card > h2::before {
+  content: "Plan your stay with local notes from the Bluff";
+  display: block;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: clamp(2.1rem, 5vw, 4.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 300;
+  color: #123034;
+}
+
+.blog-page .blog-intro-card > p {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-intro-card > p::before {
+  content: "Use these guides to get a clearer feel for the area before you book: beach access, room choices, secure parking, family trips, nearby food, and easy days out from a quieter coastal base.";
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #60757a;
 }
 
 .blog-page .blog-note-card {
@@ -71,6 +120,95 @@ body.blog-page {
 .blog-page .blog-note-card p,
 .blog-page .blog-note-card strong {
   color: #123034 !important;
+}
+
+.blog-page .blog-note-card .blog-kicker,
+.blog-page .blog-note-card strong,
+.blog-page .blog-note-card > p:last-child {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-note-card .blog-kicker::after {
+  content: "Guest note";
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+}
+
+.blog-page .blog-note-card strong::before {
+  content: "Start with the beach, then choose the room that fits.";
+  display: block;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 2.35rem;
+  line-height: 0.98;
+  font-weight: 300;
+}
+
+.blog-page .blog-note-card > p:last-child::before {
+  content: "4Shore Guesthouse is a small, owner-run stay across Foreshore Drive from Anstey's Beach, with direct enquiries handled by Winston.";
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #405a60;
+}
+
+.blog-page .blog-section-heading h2 {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-section-heading h2::before {
+  content: "Helpful reads before you arrive";
+  display: block;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: clamp(2.1rem, 5vw, 4.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 300;
+  color: #123034;
+}
+
+.blog-page .blog-section-heading > p {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-section-heading > p::before {
+  content: "Practical local articles for guests comparing Durban beach accommodation, planning a Bluff stay, or checking the details that make a trip easier.";
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #60757a;
+}
+
+.blog-page .blog-feature-copy .blog-kicker {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-feature-copy .blog-kicker::after {
+  content: "Stay by Anstey's Beach";
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+}
+
+.blog-page .blog-feature-copy h2 {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-feature-copy h2::before {
+  content: "Ready to check dates?";
+  display: block;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 300;
+}
+
+.blog-page .blog-feature-copy > p:not(.blog-kicker) {
+  font-size: 0 !important;
+}
+
+.blog-page .blog-feature-copy > p:not(.blog-kicker)::before {
+  content: "Compare the rooms, send your dates, or call Winston directly. We will help match your stay to your guest count, room preference, and travel plans.";
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255, 250, 240, 0.82);
 }
 
 .blog-page .article-card,
@@ -112,7 +250,7 @@ body.blog-page {
     padding-top: 7.25rem !important;
   }
 
-  .blog-page .blog-hero h1,
+  .blog-page .blog-hero h1::before,
   .blog-page .article-hero h1 {
     font-size: clamp(2.35rem, 12vw, 4rem) !important;
     line-height: 0.98 !important;
