@@ -1,8 +1,8 @@
-/* 4Shore blog visibility, lighter palette, and guest-facing copy fixes */
+/* 4Shore blog: homepage-matched light hero, visibility, and guest-facing copy */
 
 body.blog-page {
-  background: linear-gradient(180deg, #fbf8f1 0%, #f6eee1 100%) !important;
-  color: #123034 !important;
+  background: var(--cream, #f7fafb) !important;
+  color: var(--ink, #14202a) !important;
 }
 
 .blog-page .reveal {
@@ -13,45 +13,67 @@ body.blog-page {
 }
 
 .blog-page .site-header:not(.is-scrolled) {
-  background: linear-gradient(180deg, rgba(251, 248, 241, 0.96), rgba(251, 248, 241, 0.86)) !important;
-  color: #123034 !important;
-  border-bottom: 1px solid rgba(18, 48, 52, 0.1) !important;
-  box-shadow: 0 10px 30px rgba(18, 48, 52, 0.06) !important;
+  background: rgba(247, 250, 251, 0.94) !important;
+  color: var(--ink, #14202a) !important;
+  border-bottom: 1px solid rgba(20, 32, 42, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(10, 31, 41, 0.04) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
 }
 
 .blog-page .site-header:not(.is-scrolled) .site-nav a,
 .blog-page .site-header:not(.is-scrolled) .header-cta,
 .blog-page .site-header:not(.is-scrolled) .nav-toggle {
-  color: #123034 !important;
+  color: var(--ink, #14202a) !important;
 }
 
 .blog-page .blog-hero {
-  min-height: 48vh !important;
-  padding-top: 8rem !important;
+  min-height: 88vh !important;
+  display: grid !important;
+  align-items: center !important;
+  padding: 132px var(--gutter, clamp(22px, 5vw, 80px)) 88px !important;
   background:
-    radial-gradient(circle at 12% 12%, rgba(215, 180, 106, 0.28), transparent 32%),
-    linear-gradient(180deg, #f7efe2 0%, #ecf2ef 58%, #fbf8f1 100%) !important;
+    radial-gradient(circle at 50% 12%, rgba(124, 170, 188, 0.14), transparent 34%),
+    linear-gradient(180deg, #f7fafb 0%, #f0f7f8 62%, #f7fafb 100%) !important;
+  overflow: hidden !important;
 }
 
 .blog-page .blog-hero::after {
-  background: linear-gradient(180deg, transparent, #fbf8f1 92%) !important;
+  display: none !important;
 }
 
-.blog-page .blog-hero-inner,
-.blog-page .blog-hero h1,
-.blog-page .blog-hero-copy {
-  color: #123034 !important;
-  text-shadow: none !important;
+.blog-page .blog-hero-inner {
+  width: min(980px, 100%) !important;
+  margin: 0 auto !important;
+  color: var(--ink, #14202a) !important;
+  text-align: center !important;
+}
+
+.blog-page .blog-hero-inner::before {
+  content: "";
+  display: block;
+  width: min(430px, 72vw);
+  height: clamp(128px, 24vw, 210px);
+  margin: 0 auto 1.35rem;
+  background: url('../assets/images/brand/4shore-logo.png') center / contain no-repeat;
 }
 
 .blog-page .blog-kicker,
 .blog-page .article-kicker {
-  color: #8a6d2f !important;
+  justify-content: center !important;
+  color: var(--sea-deep, #0a3744) !important;
+  letter-spacing: 0.14em !important;
+}
+
+.blog-page .blog-kicker::before,
+.blog-page .article-kicker::before {
+  display: none !important;
 }
 
 .blog-page .blog-hero h1 {
-  font-size: 0 !important;
   max-width: 980px !important;
+  margin: 0 auto !important;
+  font-size: 0 !important;
 }
 
 .blog-page .blog-hero h1 > * {
@@ -59,30 +81,42 @@ body.blog-page {
 }
 
 .blog-page .blog-hero h1::before {
-  content: "Beach stays, local tips and quiet Durban mornings";
+  content: "Local guides for beach stays in Bluff, Durban";
   display: block;
-  font-family: 'Spectral', Georgia, serif;
-  font-size: clamp(2.6rem, 8vw, 6.4rem);
-  line-height: 0.96;
-  letter-spacing: -0.055em;
-  font-weight: 300;
-  color: #123034;
+  font-family: var(--font-display, 'Spectral', Georgia, serif);
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  font-weight: 400;
+  color: var(--ink, #14202a);
 }
 
 .blog-page .blog-hero-copy {
   max-width: 760px !important;
-  color: #405a60 !important;
+  margin: 1.35rem auto 0 !important;
+  color: var(--ink-soft, #2f3f4d) !important;
   font-size: 0 !important;
+  text-shadow: none !important;
 }
 
 .blog-page .blog-hero-copy::before {
-  content: "Simple guides for planning a stay near Anstey's Beach: where to sleep, what to pack, how to get around, and what to enjoy while you are here.";
+  content: "Practical notes for planning a quieter stay near Anstey's Beach: rooms, parking, beach days, local food, and easy Durban trips from the Bluff.";
   font-size: clamp(1.05rem, 2vw, 1.32rem);
   line-height: 1.7;
 }
 
 .blog-page .blog-intro-panel {
-  margin-top: -1.5rem !important;
+  margin-top: 0 !important;
+}
+
+.blog-page .blog-intro-card,
+.blog-page .blog-note-card,
+.blog-page .article-card,
+.blog-page .article-body,
+.blog-page .article-sidebar-card {
+  background-color: rgba(247, 250, 251, 0.94) !important;
+  border-color: rgba(20, 32, 42, 0.1) !important;
+  box-shadow: 0 18px 54px rgba(10, 31, 41, 0.06) !important;
 }
 
 .blog-page .blog-intro-card > h2 {
@@ -92,12 +126,12 @@ body.blog-page {
 .blog-page .blog-intro-card > h2::before {
   content: "Plan your stay with local notes from the Bluff";
   display: block;
-  font-family: 'Spectral', Georgia, serif;
+  font-family: var(--font-display, 'Spectral', Georgia, serif);
   font-size: clamp(2.1rem, 5vw, 4.3rem);
   line-height: 0.98;
-  letter-spacing: -0.045em;
-  font-weight: 300;
-  color: #123034;
+  letter-spacing: -0.035em;
+  font-weight: 400;
+  color: var(--ink, #14202a);
 }
 
 .blog-page .blog-intro-card > p {
@@ -108,18 +142,24 @@ body.blog-page {
   content: "Use these guides to get a clearer feel for the area before you book: beach access, room choices, secure parking, family trips, nearby food, and easy days out from a quieter coastal base.";
   font-size: 1rem;
   line-height: 1.75;
-  color: #60757a;
+  color: var(--ink-soft, #2f3f4d);
+}
+
+.blog-page .blog-pill {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border-color: rgba(20, 32, 42, 0.12) !important;
+  color: var(--sea-deep, #0a3744) !important;
 }
 
 .blog-page .blog-note-card {
   background:
-    linear-gradient(145deg, rgba(255, 250, 243, 0.96), rgba(236, 242, 239, 0.96)) !important;
-  color: #123034 !important;
+    linear-gradient(145deg, rgba(247, 250, 251, 0.96), rgba(225, 238, 242, 0.9)) !important;
+  color: var(--ink, #14202a) !important;
 }
 
 .blog-page .blog-note-card p,
 .blog-page .blog-note-card strong {
-  color: #123034 !important;
+  color: var(--ink, #14202a) !important;
 }
 
 .blog-page .blog-note-card .blog-kicker,
@@ -137,17 +177,17 @@ body.blog-page {
 .blog-page .blog-note-card strong::before {
   content: "Start with the beach, then choose the room that fits.";
   display: block;
-  font-family: 'Spectral', Georgia, serif;
+  font-family: var(--font-display, 'Spectral', Georgia, serif);
   font-size: 2.35rem;
   line-height: 0.98;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .blog-page .blog-note-card > p:last-child::before {
   content: "4Shore Guesthouse is a small, owner-run stay across Foreshore Drive from Anstey's Beach, with direct enquiries handled by Winston.";
   font-size: 1rem;
   line-height: 1.75;
-  color: #405a60;
+  color: var(--ink-soft, #2f3f4d);
 }
 
 .blog-page .blog-section-heading h2 {
@@ -157,12 +197,12 @@ body.blog-page {
 .blog-page .blog-section-heading h2::before {
   content: "Helpful reads before you arrive";
   display: block;
-  font-family: 'Spectral', Georgia, serif;
+  font-family: var(--font-display, 'Spectral', Georgia, serif);
   font-size: clamp(2.1rem, 5vw, 4.3rem);
   line-height: 0.98;
-  letter-spacing: -0.045em;
-  font-weight: 300;
-  color: #123034;
+  letter-spacing: -0.035em;
+  font-weight: 400;
+  color: var(--ink, #14202a);
 }
 
 .blog-page .blog-section-heading > p {
@@ -173,7 +213,7 @@ body.blog-page {
   content: "Practical local articles for guests comparing Durban beach accommodation, planning a Bluff stay, or checking the details that make a trip easier.";
   font-size: 1rem;
   line-height: 1.7;
-  color: #60757a;
+  color: var(--ink-soft, #2f3f4d);
 }
 
 .blog-page .blog-feature-copy .blog-kicker {
@@ -193,11 +233,11 @@ body.blog-page {
 .blog-page .blog-feature-copy h2::before {
   content: "Ready to check dates?";
   display: block;
-  font-family: 'Spectral', Georgia, serif;
+  font-family: var(--font-display, 'Spectral', Georgia, serif);
   font-size: clamp(2.2rem, 5vw, 4.2rem);
   line-height: 0.98;
-  letter-spacing: -0.045em;
-  font-weight: 300;
+  letter-spacing: -0.035em;
+  font-weight: 400;
 }
 
 .blog-page .blog-feature-copy > p:not(.blog-kicker) {
@@ -211,53 +251,53 @@ body.blog-page {
   color: rgba(255, 250, 240, 0.82);
 }
 
-.blog-page .article-card,
-.blog-page .blog-intro-card,
-.blog-page .blog-note-card,
-.blog-page .article-body,
-.blog-page .article-sidebar-card {
-  background-color: rgba(255, 250, 243, 0.96) !important;
-  box-shadow: 0 18px 54px rgba(18, 48, 52, 0.08) !important;
-}
-
 .blog-page .article-hero {
-  min-height: 44vh !important;
+  min-height: 62vh !important;
+  display: grid !important;
+  align-items: center !important;
   background:
-    radial-gradient(circle at 16% 12%, rgba(215, 180, 106, 0.24), transparent 34%),
-    linear-gradient(180deg, #f7efe2 0%, #edf4f1 62%, #fbf8f1 100%) !important;
-  color: #123034 !important;
+    radial-gradient(circle at 50% 12%, rgba(124, 170, 188, 0.14), transparent 34%),
+    linear-gradient(180deg, #f7fafb 0%, #f0f7f8 62%, #f7fafb 100%) !important;
+  color: var(--ink, #14202a) !important;
 }
 
 .blog-page .article-hero-inner,
 .blog-page .article-hero h1,
 .blog-page .article-hero .article-meta {
-  color: #123034 !important;
+  color: var(--ink, #14202a) !important;
   text-shadow: none !important;
+  text-align: center !important;
 }
 
 .blog-page .article-hero h1 em {
-  color: #1c6378 !important;
+  color: var(--sea-soft, #7caabc) !important;
 }
 
 .blog-page .article-layout {
-  margin-top: -1.5rem !important;
+  margin-top: 0 !important;
 }
 
 @media (max-width: 760px) {
-  .blog-page .blog-hero,
-  .blog-page .article-hero {
-    min-height: 44vh !important;
-    padding-top: 7.25rem !important;
+  .blog-page .blog-hero {
+    min-height: 86vh !important;
+    padding-top: 124px !important;
+    padding-bottom: 72px !important;
+  }
+
+  .blog-page .blog-hero-inner::before {
+    width: min(360px, 76vw);
+    height: 150px;
+    margin-bottom: 1.1rem;
   }
 
   .blog-page .blog-hero h1::before,
   .blog-page .article-hero h1 {
-    font-size: clamp(2.35rem, 12vw, 4rem) !important;
-    line-height: 0.98 !important;
-    letter-spacing: -0.045em !important;
+    font-size: clamp(2.35rem, 10.8vw, 4.2rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.035em !important;
   }
 
   .blog-page .blog-intro-panel {
-    margin-top: -0.75rem !important;
+    margin-top: 0 !important;
   }
 }
