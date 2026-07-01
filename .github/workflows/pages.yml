@@ -23,26 +23,59 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Add blog link to homepage navigation
+
+      - name: Apply homepage and blog visibility fixes
         run: |
           python - <<'PY'
           from pathlib import Path
 
-          path = Path("index.html")
-          content = path.read_text()
+          home = Path("index.html")
+          content = home.read_text()
+
+          # Add Blog to the homepage source that is deployed to GitHub Pages.
           if 'href="blog/"' not in content:
               content = content.replace(
                   ' <a href="#directions">Find us</a>\n </nav>',
                   ' <a href="#directions">Find us</a>\n <a href="blog/">Blog</a>\n </nav>'
               )
-              path.write_text(content)
+
+          # Add Blog to the homepage footer as well.
+          if '<a href="blog/">Blog</a>' not in content:
+              content = content.replace(
+                  ' <a href="#directions">Directions</a>\n </div>',
+                  ' <a href="#directions">Directions</a>\n <a href="blog/">Blog</a>\n </div>'
+              )
+
+          home.write_text(content)
+
+          # Ensure the blog pages load the permanent override CSS.
+          version = "20260701-fix2"
+          for path in Path("blog").rglob("index.html"):
+              html = path.read_text()
+              if "blog-fixes.css" in html:
+                  continue
+
+              href = "blog-fixes.css" if path.parent == Path("blog") else "../blog-fixes.css"
+              link = f'  <link rel="stylesheet" href="{href}?v={version}">'
+              html = html.replace(
+                  '  <link rel="stylesheet" href="../blog.css?v=20260701">',
+                  '  <link rel="stylesheet" href="../blog.css?v=20260701">\n' + link
+              )
+              html = html.replace(
+                  '  <link rel="stylesheet" href="blog.css?v=20260701">',
+                  '  <link rel="stylesheet" href="blog.css?v=20260701">\n' + link
+              )
+              path.write_text(html)
           PY
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
