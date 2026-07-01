@@ -1,4 +1,4 @@
-/* 4Shore blog: homepage-matched light hero, visibility, and guest-facing copy */
+/* 4Shore blog: homepage-matched light hero, visibility, readable dark panels, and working mobile menu */
 
 body.blog-page {
   background: var(--cream, #f7fafb) !important;
@@ -10,6 +10,10 @@ body.blog-page {
   transform: none !important;
   filter: none !important;
   visibility: visible !important;
+}
+
+.blog-page .site-header {
+  z-index: 1000 !important;
 }
 
 .blog-page .site-header:not(.is-scrolled) {
@@ -216,6 +220,16 @@ body.blog-page {
   color: var(--ink-soft, #2f3f4d);
 }
 
+.blog-page .blog-feature-band {
+  color: #fffaf0 !important;
+  background: #0d3f49 !important;
+}
+
+.blog-page .blog-feature-copy,
+.blog-page .blog-feature-copy * {
+  color: #fffaf0 !important;
+}
+
 .blog-page .blog-feature-copy .blog-kicker {
   font-size: 0 !important;
 }
@@ -224,6 +238,7 @@ body.blog-page {
   content: "Stay by Anstey's Beach";
   font-size: 0.78rem;
   letter-spacing: 0.16em;
+  color: #d7e9ef !important;
 }
 
 .blog-page .blog-feature-copy h2 {
@@ -238,6 +253,7 @@ body.blog-page {
   line-height: 0.98;
   letter-spacing: -0.035em;
   font-weight: 400;
+  color: #fffaf0 !important;
 }
 
 .blog-page .blog-feature-copy > p:not(.blog-kicker) {
@@ -248,7 +264,20 @@ body.blog-page {
   content: "Compare the rooms, send your dates, or call Winston directly. We will help match your stay to your guest count, room preference, and travel plans.";
   font-size: 1rem;
   line-height: 1.75;
-  color: rgba(255, 250, 240, 0.82);
+  color: rgba(255, 250, 240, 0.9) !important;
+}
+
+.blog-page .blog-feature-copy .button.primary {
+  background: #0a5a68 !important;
+  color: #fffaf0 !important;
+  border-color: #0a5a68 !important;
+}
+
+.blog-page .blog-feature-copy .button.secondary,
+.blog-page .blog-feature-copy .button.ghost {
+  color: #fffaf0 !important;
+  border-color: rgba(255, 250, 240, 0.72) !important;
+  background: transparent !important;
 }
 
 .blog-page .article-hero {
@@ -275,6 +304,41 @@ body.blog-page {
 
 .blog-page .article-layout {
   margin-top: 0 !important;
+}
+
+@media (max-width: 920px) {
+  .blog-page .site-nav.is-open {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    left: 22px !important;
+    right: 22px !important;
+    z-index: 1100 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 4px !important;
+    padding: 18px !important;
+    background: var(--cream, #f7fafb) !important;
+    border: 1px solid rgba(20, 32, 42, 0.14) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 18px 52px rgba(10, 31, 41, 0.14) !important;
+    color: var(--ink, #14202a) !important;
+  }
+
+  .blog-page .site-nav.is-open a {
+    display: block !important;
+    padding: 14px 12px !important;
+    color: var(--ink, #14202a) !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+  }
+
+  .blog-page .site-nav.is-open a:active,
+  .blog-page .site-nav.is-open a:focus-visible,
+  .blog-page .site-nav.is-open a:hover {
+    background: rgba(10, 55, 68, 0.08) !important;
+    outline: none !important;
+  }
 }
 
 @media (max-width: 760px) {
