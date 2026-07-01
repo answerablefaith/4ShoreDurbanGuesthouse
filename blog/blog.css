@@ -10,10 +10,7 @@
 }
 
 body.blog-page {
-  background:
-    radial-gradient(circle at 15% 12%, rgba(215, 180, 106, 0.18), transparent 32rem),
-    radial-gradient(circle at 85% 8%, rgba(108, 166, 165, 0.20), transparent 34rem),
-    linear-gradient(180deg, #f6efe4 0%, #fbf7ef 45%, #f2eadf 100%);
+  background: linear-gradient(180deg, #fbf7ef 0%, #f8f1e7 100%);
   color: var(--blog-ink);
 }
 
@@ -34,7 +31,7 @@ body.blog-page {
   overflow: hidden;
   isolation: isolate;
   background:
-    linear-gradient(180deg, rgba(13, 35, 38, 0.38), rgba(13, 35, 38, 0.64)),
+    linear-gradient(180deg, rgba(13, 35, 38, 0.50), rgba(13, 35, 38, 0.70)),
     url('../assets/images/explore/outside-9.jpg') center / cover;
 }
 
@@ -43,7 +40,7 @@ body.blog-page {
   position: absolute;
   inset: auto 0 -1px;
   height: 9rem;
-  background: linear-gradient(180deg, transparent, #f6efe4 92%);
+  background: linear-gradient(180deg, transparent, #fbf7ef 92%);
   z-index: -1;
 }
 
