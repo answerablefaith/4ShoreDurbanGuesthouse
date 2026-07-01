@@ -1,7 +1,8 @@
-/* 4Shore blog visibility and calmer background fixes */
+/* 4Shore blog visibility, lighter palette, and calmer background fixes */
 
 body.blog-page {
-  background: #fbf8f1 !important;
+  background: linear-gradient(180deg, #fbf8f1 0%, #f6eee1 100%) !important;
+  color: #123034 !important;
 }
 
 .blog-page .reveal {
@@ -11,29 +12,65 @@ body.blog-page {
   visibility: visible !important;
 }
 
+.blog-page .site-header:not(.is-scrolled) {
+  background: linear-gradient(180deg, rgba(251, 248, 241, 0.96), rgba(251, 248, 241, 0.86)) !important;
+  color: #123034 !important;
+  border-bottom: 1px solid rgba(18, 48, 52, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(18, 48, 52, 0.06) !important;
+}
+
+.blog-page .site-header:not(.is-scrolled) .site-nav a,
+.blog-page .site-header:not(.is-scrolled) .header-cta,
+.blog-page .site-header:not(.is-scrolled) .nav-toggle {
+  color: #123034 !important;
+}
+
 .blog-page .blog-hero {
   min-height: 48vh !important;
   padding-top: 8rem !important;
   background:
-    linear-gradient(180deg, rgba(13, 35, 38, 0.78), rgba(13, 35, 38, 0.58)),
-    linear-gradient(135deg, #15383d 0%, #356f72 48%, #f7efe2 100%) !important;
+    radial-gradient(circle at 12% 12%, rgba(215, 180, 106, 0.28), transparent 32%),
+    linear-gradient(180deg, #f7efe2 0%, #ecf2ef 58%, #fbf8f1 100%) !important;
 }
 
 .blog-page .blog-hero::after {
   background: linear-gradient(180deg, transparent, #fbf8f1 92%) !important;
 }
 
+.blog-page .blog-hero-inner,
+.blog-page .blog-hero h1,
 .blog-page .blog-hero-copy {
-  color: rgba(255, 250, 240, 0.9) !important;
+  color: #123034 !important;
+  text-shadow: none !important;
+}
+
+.blog-page .blog-hero h1 em {
+  color: #1c6378 !important;
+}
+
+.blog-page .blog-kicker,
+.blog-page .article-kicker {
+  color: #8a6d2f !important;
+}
+
+.blog-page .blog-hero-copy {
+  max-width: 760px !important;
+  color: #405a60 !important;
 }
 
 .blog-page .blog-intro-panel {
-  margin-top: -2.25rem !important;
+  margin-top: -1.5rem !important;
 }
 
 .blog-page .blog-note-card {
   background:
-    linear-gradient(145deg, rgba(13, 35, 38, 0.96), rgba(35, 83, 86, 0.94)) !important;
+    linear-gradient(145deg, rgba(255, 250, 243, 0.96), rgba(236, 242, 239, 0.96)) !important;
+  color: #123034 !important;
+}
+
+.blog-page .blog-note-card p,
+.blog-page .blog-note-card strong {
+  color: #123034 !important;
 }
 
 .blog-page .article-card,
@@ -41,14 +78,27 @@ body.blog-page {
 .blog-page .blog-note-card,
 .blog-page .article-body,
 .blog-page .article-sidebar-card {
-  background-color: rgba(255, 250, 243, 0.94) !important;
+  background-color: rgba(255, 250, 243, 0.96) !important;
+  box-shadow: 0 18px 54px rgba(18, 48, 52, 0.08) !important;
 }
 
 .blog-page .article-hero {
   min-height: 44vh !important;
   background:
-    linear-gradient(180deg, rgba(13, 35, 38, 0.72), rgba(13, 35, 38, 0.58)),
-    linear-gradient(135deg, #15383d 0%, #356f72 54%, #f7efe2 100%) !important;
+    radial-gradient(circle at 16% 12%, rgba(215, 180, 106, 0.24), transparent 34%),
+    linear-gradient(180deg, #f7efe2 0%, #edf4f1 62%, #fbf8f1 100%) !important;
+  color: #123034 !important;
+}
+
+.blog-page .article-hero-inner,
+.blog-page .article-hero h1,
+.blog-page .article-hero .article-meta {
+  color: #123034 !important;
+  text-shadow: none !important;
+}
+
+.blog-page .article-hero h1 em {
+  color: #1c6378 !important;
 }
 
 .blog-page .article-layout {
@@ -58,11 +108,18 @@ body.blog-page {
 @media (max-width: 760px) {
   .blog-page .blog-hero,
   .blog-page .article-hero {
-    min-height: 42vh !important;
-    padding-top: 7rem !important;
+    min-height: 44vh !important;
+    padding-top: 7.25rem !important;
+  }
+
+  .blog-page .blog-hero h1,
+  .blog-page .article-hero h1 {
+    font-size: clamp(2.35rem, 12vw, 4rem) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.045em !important;
   }
 
   .blog-page .blog-intro-panel {
-    margin-top: -1.25rem !important;
+    margin-top: -0.75rem !important;
   }
 }
