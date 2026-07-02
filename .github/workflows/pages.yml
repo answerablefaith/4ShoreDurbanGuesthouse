@@ -28,16 +28,30 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
 
           home = Path("index.html")
           content = home.read_text()
 
-          # Add Blog to the homepage source that is deployed to GitHub Pages.
-          if 'href="blog/"' not in content:
-              content = content.replace(
-                  ' <a href="#directions">Find us</a>\n </nav>',
-                  ' <a href="#directions">Find us</a>\n <a href="blog/">Blog</a>\n </nav>'
-              )
+          # Keep the live homepage header menu complete and consistent.
+          home_nav = '''<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+ <a href="#home">Home</a>
+ <a href="#gallery">Gallery</a>
+ <a href="#about">About</a>
+ <a href="#rooms">Rooms</a>
+ <a href="#explore">The Bluff</a>
+ <a href="#reviews">Reviews</a>
+ <a href="#rates">Rates</a>
+ <a href="#directions">Find us</a>
+ <a href="blog/">Blog</a>
+ </nav>'''
+          content = re.sub(
+              r'<nav class="site-nav" id="site-nav" aria-label="Primary navigation">.*?</nav>',
+              home_nav,
+              content,
+              count=1,
+              flags=re.S,
+          )
 
           # Add Blog to the homepage footer as well.
           if '<a href="blog/">Blog</a>' not in content:
@@ -48,27 +62,54 @@ jobs:
 
           home.write_text(content)
 
-          # Ensure the blog pages load the permanent override CSS.
-          version = "20260702-contrast-menu1"
+          def ensure_stylesheet(html: str, href: str, version: str) -> str:
+              if f'href="{href}' in html:
+                  html = re.sub(rf'href="{re.escape(href)}\?v=[^"]+"', f'href="{href}?v={version}"', html)
+                  html = html.replace(f'href="{href}"', f'href="{href}?v={version}"')
+                  return html
+
+              link = f'  <link rel="stylesheet" href="{href}?v={version}">'
+              blog_css_link = '  <link rel="stylesheet" href="../blog.css?v=20260701">' if href.startswith('../') else '  <link rel="stylesheet" href="blog.css?v=20260701">'
+              if blog_css_link in html:
+                  return html.replace(blog_css_link, blog_css_link + '\n' + link)
+
+              return html.replace('</head>', link + '\n</head>')
+
+          version = "20260702-header-match1"
+
+          # Ensure every blog page has the same header menu as the main site,
+          # with paths adjusted for the page depth.
           for path in Path("blog").rglob("index.html"):
               html = path.read_text()
-              if "blog-fixes.css" in html:
-                  html = html.replace("20260701-fix2", version)
-                  html = html.replace("20260701-light1", version)
-                  html = html.replace("20260701-theme1", version)
-                  path.write_text(html)
-                  continue
+              is_blog_index = path.parent == Path("blog")
+              base = "../" if is_blog_index else "../../"
+              blog_href = "./" if is_blog_index else "../"
+              header_css = "header-match.css" if is_blog_index else "../header-match.css"
+              fixes_css = "blog-fixes.css" if is_blog_index else "../blog-fixes.css"
 
-              href = "blog-fixes.css" if path.parent == Path("blog") else "../blog-fixes.css"
-              link = f'  <link rel="stylesheet" href="{href}?v={version}">'
-              html = html.replace(
-                  '  <link rel="stylesheet" href="../blog.css?v=20260701">',
-                  '  <link rel="stylesheet" href="../blog.css?v=20260701">\n' + link
+              html = html.replace('class="site-header is-transparent"', 'class="site-header"')
+
+              blog_nav = f'''<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="{base}">Home</a>
+      <a href="{base}#gallery">Gallery</a>
+      <a href="{base}#about">About</a>
+      <a href="{base}#rooms">Rooms</a>
+      <a href="{base}#explore">The Bluff</a>
+      <a href="{base}#reviews">Reviews</a>
+      <a href="{base}#rates">Rates</a>
+      <a href="{base}#directions">Find us</a>
+      <a href="{blog_href}" aria-current="page">Blog</a>
+    </nav>'''
+              html = re.sub(
+                  r'<nav class="site-nav" id="site-nav" aria-label="Primary navigation">.*?</nav>',
+                  blog_nav,
+                  html,
+                  count=1,
+                  flags=re.S,
               )
-              html = html.replace(
-                  '  <link rel="stylesheet" href="blog.css?v=20260701">',
-                  '  <link rel="stylesheet" href="blog.css?v=20260701">\n' + link
-              )
+
+              html = ensure_stylesheet(html, fixes_css, version)
+              html = ensure_stylesheet(html, header_css, version)
               path.write_text(html)
           PY
 
