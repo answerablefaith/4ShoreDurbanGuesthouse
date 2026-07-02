@@ -159,187 +159,53 @@ body.blog-page {
   letter-spacing: 0.14em !important;
 }
 
-.blog-page .blog-kicker::before,
-.blog-page .article-kicker::before {
-  display: none !important;
+/* Improve blog article reading rhythm across all posts. */
+.blog-page .article-body p {
+  margin: 0 0 1.3rem !important;
 }
 
-.blog-page .blog-hero h1 {
-  max-width: 980px !important;
-  margin: 0 auto !important;
-  font-size: 0 !important;
+.blog-page .article-body p:last-child {
+  margin-bottom: 0 !important;
 }
 
-.blog-page .blog-hero h1 > * {
-  display: none !important;
+.blog-page .article-body h2 {
+  margin: 2.8rem 0 1rem !important;
 }
 
-.blog-page .blog-hero h1::before {
-  content: "Local guides for beach stays in Bluff, Durban";
-  display: block;
-  font-family: var(--font-display, 'Spectral', Georgia, serif);
-  font-size: clamp(2.8rem, 7vw, 5.8rem);
-  line-height: 0.98;
-  letter-spacing: -0.035em;
-  font-weight: 400;
-  color: var(--ink, #14202a);
-}
-
-.blog-page .blog-hero-copy {
-  max-width: 760px !important;
-  margin: 1.35rem auto 0 !important;
-  color: var(--ink-soft, #2f3f4d) !important;
-  font-size: 0 !important;
-  text-shadow: none !important;
-}
-
-.blog-page .blog-hero-copy::before {
-  content: "Practical notes for planning a quieter stay near Anstey's Beach: rooms, parking, beach days, local food, and easy Durban trips from the Bluff.";
-  font-size: clamp(1.05rem, 2vw, 1.32rem);
-  line-height: 1.7;
-}
-
-.blog-page .blog-intro-panel {
+.blog-page .article-body h2:first-child {
   margin-top: 0 !important;
 }
 
-/* Performance: skip off-screen rendering work while preserving layout, design and animations. */
-.blog-page .blog-intro-panel,
-.blog-page .blog-section-heading,
-.blog-page .article-grid,
-.blog-page .article-card,
-.blog-page .blog-feature-band,
-.blog-page .article-layout,
-.blog-page .article-body,
-.blog-page .article-sidebar,
-.blog-page .site-footer {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 720px;
+.blog-page .article-body h3 {
+  margin: 1.8rem 0 .55rem !important;
+  font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: clamp(1.05rem, 1.4vw, 1.22rem);
+  line-height: 1.35;
+  letter-spacing: -.01em;
+  color: var(--blog-deep, #0d2326);
 }
 
-.blog-page .article-card {
-  contain-intrinsic-size: auto 460px;
+.blog-page .article-body h2 + h3 {
+  margin-top: 1rem !important;
 }
 
-.blog-page .article-sidebar,
-.blog-page .site-footer {
-  contain-intrinsic-size: auto 320px;
-}
-
-/* Contrast fixes for the blog landing page call-to-action card. */
-.blog-page .blog-feature-band {
-  background: linear-gradient(145deg, #eef7f8, #f7fafb) !important;
-  color: var(--ink, #14202a) !important;
-  border: 1px solid rgba(20, 32, 42, 0.10) !important;
-  box-shadow: 0 22px 58px rgba(10, 31, 41, 0.08) !important;
-}
-
-.blog-page .blog-feature-copy,
-.blog-page .blog-feature-copy h2,
-.blog-page .blog-feature-copy p,
-.blog-page .blog-feature-copy .blog-kicker {
-  color: var(--ink, #14202a) !important;
-  text-shadow: none !important;
-}
-
-.blog-page .blog-feature-copy .blog-kicker {
-  color: var(--sea-deep, #0a3744) !important;
-}
-
-.blog-page .blog-feature-copy p {
-  color: var(--ink-soft, #2f3f4d) !important;
-}
-
-.blog-page .blog-feature-copy .button.primary {
-  background: var(--sea-deep, #0a3744) !important;
-  color: var(--cream, #f7fafb) !important;
-  border-color: var(--sea-deep, #0a3744) !important;
-}
-
-.blog-page .blog-feature-copy .button.secondary,
-.blog-page .blog-feature-copy .button.ghost {
-  background: transparent !important;
-  color: var(--sea-deep, #0a3744) !important;
-  border-color: rgba(10, 55, 68, 0.34) !important;
-}
-
-/* Lighter, shorter article heroes with readable blue accent instead of yellow. */
-.blog-page .article-hero {
-  min-height: 38vh !important;
-  align-items: end !important;
-  padding: clamp(112px, 14vw, 150px) clamp(22px, 5vw, 80px) clamp(32px, 6vw, 58px) !important;
-  background: linear-gradient(180deg, #f7fafb 0%, #eef7f8 70%, #f7fafb 100%) !important;
-  color: var(--ink, #14202a) !important;
-}
-
-.blog-page .article-hero-inner,
-.blog-page .article-hero h1,
-.blog-page .article-hero .article-meta,
-.blog-page .article-hero .article-kicker {
-  color: var(--ink, #14202a) !important;
-  text-shadow: none !important;
-}
-
-.blog-page .article-hero h1 {
-  max-width: 1040px !important;
-  font-size: clamp(2.45rem, 7vw, 5.8rem) !important;
-  line-height: 0.98 !important;
-}
-
-.blog-page .article-hero h1 em {
-  color: var(--sea-deep, #0a3744) !important;
-  font-style: italic !important;
-}
-
-.blog-page .article-meta {
-  color: rgba(10, 55, 68, 0.72) !important;
-}
-
-.blog-page .article-layout {
+.blog-page .article-body h3 + p {
   margin-top: 0 !important;
 }
 
-@media (max-width: 920px) {
-  .blog-page .site-header,
-  .blog-page .site-header.is-transparent,
-  .blog-page .site-header:not(.is-scrolled) {
-    grid-template-columns: auto auto !important;
-    justify-content: space-between !important;
-    gap: 16px !important;
-  }
-
-  .blog-page .header-actions {
-    display: none !important;
-  }
-
-  .blog-page .site-nav {
-    display: none !important;
-  }
-
-  .blog-page .site-nav.is-open,
-  body.nav-open .blog-page .site-nav,
-  body.nav-open .site-nav {
-    display: flex !important;
-  }
+.blog-page .article-body ul,
+.blog-page .article-body ol {
+  margin: 0 0 1.35rem !important;
 }
 
-@media (max-width: 680px) {
-  .blog-page .blog-hero {
-    min-height: 72vh !important;
-    padding-top: 118px !important;
-  }
+.blog-page .article-body li + li {
+  margin-top: .45rem !important;
+}
 
-  .blog-page .article-hero {
-    min-height: auto !important;
-    padding: 112px 22px 30px !important;
-  }
+.blog-page .article-sidebar-card p {
+  margin: .45rem 0 1rem !important;
+}
 
-  .blog-page .article-hero h1 {
-    font-size: clamp(2.25rem, 11vw, 3.65rem) !important;
-    line-height: 1.02 !important;
-  }
-
-  .blog-page .blog-feature-band {
-    border-radius: 1.4rem !important;
-  }
+.blog-page .article-sidebar-card li + li {
+  margin-top: .35rem !important;
 }
