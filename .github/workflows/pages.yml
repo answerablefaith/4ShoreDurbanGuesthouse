@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Add homepage menu links
+        run: python3 tools/patch-pages-menu.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
