@@ -274,7 +274,8 @@ body.blog-page {
   }
 
   body.nav-open.blog-page .site-nav,
-  body.blog-page.nav-open .site-nav {
+  body.blog-page.nav-open .site-nav,
+  .blog-page .site-nav.is-open {
     display: flex !important;
   }
 
