@@ -14,6 +14,7 @@
   backdrop-filter: saturate(140%) blur(14px) !important;
   -webkit-backdrop-filter: saturate(140%) blur(14px) !important;
   color: var(--ink) !important;
+  z-index: 1000 !important;
 }
 
 .blog-page .brand {
@@ -107,6 +108,99 @@
   background: var(--sea-deep) !important;
   color: var(--cream) !important;
   border-color: var(--sea-deep) !important;
+}
+
+/* Restore the visible light blog landing hero that was previously produced by the deploy patch. */
+body.blog-page {
+  background: var(--cream, #f7fafb) !important;
+  color: var(--ink, #14202a) !important;
+}
+
+.blog-page .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  visibility: visible !important;
+}
+
+.blog-page .blog-hero {
+  min-height: 88vh !important;
+  display: grid !important;
+  align-items: center !important;
+  padding: 132px var(--gutter, clamp(22px, 5vw, 80px)) 88px !important;
+  background: radial-gradient(circle at 50% 12%, rgba(124, 170, 188, 0.14), transparent 34%), linear-gradient(180deg, #f7fafb 0%, #f0f7f8 62%, #f7fafb 100%) !important;
+  overflow: hidden !important;
+}
+
+.blog-page .blog-hero::after {
+  display: none !important;
+}
+
+.blog-page .blog-hero-inner {
+  width: min(980px, 100%) !important;
+  margin: 0 auto !important;
+  color: var(--ink, #14202a) !important;
+  text-align: center !important;
+}
+
+.blog-page .blog-hero-inner::before {
+  content: "";
+  display: block;
+  width: min(430px, 72vw);
+  height: clamp(128px, 24vw, 210px);
+  margin: 0 auto 1.35rem;
+  background: url('../assets/images/brand/4shore-logo.png') center / contain no-repeat;
+}
+
+.blog-page .blog-kicker,
+.blog-page .article-kicker {
+  justify-content: center !important;
+  color: var(--sea-deep, #0a3744) !important;
+  letter-spacing: 0.14em !important;
+}
+
+.blog-page .blog-kicker::before,
+.blog-page .article-kicker::before {
+  display: none !important;
+}
+
+.blog-page .blog-hero h1 {
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  font-size: 0 !important;
+}
+
+.blog-page .blog-hero h1 > * {
+  display: none !important;
+}
+
+.blog-page .blog-hero h1::before {
+  content: "Local guides for beach stays in Bluff, Durban";
+  display: block;
+  font-family: var(--font-display, 'Spectral', Georgia, serif);
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  font-weight: 400;
+  color: var(--ink, #14202a);
+}
+
+.blog-page .blog-hero-copy {
+  max-width: 760px !important;
+  margin: 1.35rem auto 0 !important;
+  color: var(--ink-soft, #2f3f4d) !important;
+  font-size: 0 !important;
+  text-shadow: none !important;
+}
+
+.blog-page .blog-hero-copy::before {
+  content: "Practical notes for planning a quieter stay near Anstey's Beach: rooms, parking, beach days, local food, and easy Durban trips from the Bluff.";
+  font-size: clamp(1.05rem, 2vw, 1.32rem);
+  line-height: 1.7;
+}
+
+.blog-page .blog-intro-panel {
+  margin-top: 0 !important;
 }
 
 @media (max-width: 920px) {
