@@ -209,6 +209,11 @@ body.blog-page {
   .blog-page .site-header:not(.is-scrolled) {
     grid-template-columns: auto auto !important;
     justify-content: space-between !important;
+    gap: 16px !important;
+  }
+
+  .blog-page .header-actions {
+    display: none !important;
   }
 
   .blog-page .site-nav {
