@@ -109,18 +109,21 @@
   border-color: var(--sea-deep) !important;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 920px) {
   .blog-page .site-header,
   .blog-page .site-header.is-transparent,
   .blog-page .site-header:not(.is-scrolled) {
     grid-template-columns: auto auto !important;
+    justify-content: space-between !important;
   }
 
   .blog-page .site-nav {
     display: none !important;
   }
 
-  .blog-page .site-nav.is-open {
+  .blog-page .site-nav.is-open,
+  body.nav-open .blog-page .site-nav,
+  body.nav-open .site-nav {
     display: flex !important;
   }
 }
