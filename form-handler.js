@@ -1,6 +1,7 @@
 (() => {
   const endpoint = "https://formsubmit.co/ajax/4shoredurban@gmail.com";
   const successMessage = "Thanks, your enquiry has been sent. Winston will reply as soon as possible.";
+  const activationMessage = "Your enquiry was received by the form service, but 4Shore may still need to confirm FormSubmit. Please check 4shoredurban@gmail.com for a FormSubmit activation email, or call +27 83 254 4825.";
   const errorMessage = "The form could not send just now. Please try again, or call +27 83 254 4825.";
 
   function setFormStatus(form, message, state = "") {
@@ -52,16 +53,27 @@
     const response = await fetch(endpoint, {
       method: "POST",
       headers: {
-        Accept: "application/json"
+        Accept: "application/json",
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
       },
-      body: buildPayload(form)
+      body: buildPayload(form).toString()
     });
 
+    const data = await response.json().catch(() => ({}));
+
     if (!response.ok) {
-      throw new Error(`Form submission failed with ${response.status}`);
+      const message = data.message || data.error || `Form submission failed with ${response.status}`;
+      throw new Error(message);
     }
 
-    return response.json().catch(() => ({}));
+    const text = JSON.stringify(data).toLowerCase();
+    if (text.includes("activate") || text.includes("confirm") || text.includes("not activated")) {
+      const activationError = new Error("FormSubmit activation required");
+      activationError.activationRequired = true;
+      throw activationError;
+    }
+
+    return data;
   }
 
   document.querySelectorAll("[data-enquiry-form]").forEach((form) => {
@@ -100,7 +112,7 @@
           setFormStatus(form, successMessage, "success");
         } catch (error) {
           console.error(error);
-          setFormStatus(form, errorMessage, "error");
+          setFormStatus(form, error.activationRequired ? activationMessage : errorMessage, "error");
         } finally {
           delete form.dataset.submitting;
           submitButton?.removeAttribute("disabled");
