@@ -81,6 +81,49 @@
         "../things-to-do-near-bluff-durban/",
         "../beachfront-guesthouse-with-secure-parking-durban/"
       ]
+    },
+    {
+      "date": "2026-07-02",
+      "dateUpdated": "2026-07-02",
+      "title": "Family accommodation in Bluff, Durban near Anstey's Beach",
+      "slug": "family-accommodation-bluff-durban",
+      "url": "https://www.4shoreguesthouse.co.za/blog/family-accommodation-bluff-durban/",
+      "primaryKeyword": "family accommodation Bluff Durban",
+      "secondaryKeywords": [
+        "family accommodation near Anstey's Beach",
+        "school holiday accommodation Durban",
+        "Bluff Durban accommodation",
+        "Durban beach accommodation with secure parking"
+      ],
+      "topicCluster": "Family stays",
+      "searchIntent": "Families comparing practical beach accommodation in Bluff, Durban",
+      "seasonality": "Evergreen with school-holiday relevance",
+      "serpGapSummary": "Prominent search results lean towards listings or broad area pages. This article adds practical family planning details: room fit, secure parking, beach access, direct booking, and simple daily rhythm.",
+      "competingPageAnglesNoticed": [
+        "Generic accommodation listing pages",
+        "Broad Durban family travel pages",
+        "Area descriptions that do not explain room choice or direct booking"
+      ],
+      "firstHandLocalValueAdded": "Uses 4Shore's known location across Foreshore Drive from Anstey's Beach, nine en-suite rooms, private entrances, secure on-site parking, and direct enquiry booking with Winston.",
+      "internalLinksUsed": [
+        "../../#rooms",
+        "../../#rates",
+        "../../#directions",
+        "../../#availability-form",
+        "../where-to-stay-near-ansteys-beach/",
+        "../things-to-do-near-bluff-durban/",
+        "../beachfront-guesthouse-with-secure-parking-durban/",
+        "../winter-beach-stay-durban-whale-season/"
+      ],
+      "imageUsed": "assets/images/property/property-room-courtyard.jpg",
+      "schemaTypesAdded": [
+        "BlogPosting",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "sitemapUpdated": true,
+      "llmsTxtUpdated": true,
+      "runAction": "created"
     }
   ]
 }
