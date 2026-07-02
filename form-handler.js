@@ -35,6 +35,7 @@
       _template: "table",
       _captcha: "false",
       _replyto: email,
+      _cc: "4shoredurban@gmail.com",
       _honey: getValue(form, "bot_field"),
       name: getValue(form, "guest_name"),
       email,
