@@ -203,6 +203,29 @@ body.blog-page {
   margin-top: 0 !important;
 }
 
+/* Performance: skip off-screen rendering work while preserving layout, design and animations. */
+.blog-page .blog-intro-panel,
+.blog-page .blog-section-heading,
+.blog-page .article-grid,
+.blog-page .article-card,
+.blog-page .blog-feature-band,
+.blog-page .article-layout,
+.blog-page .article-body,
+.blog-page .article-sidebar,
+.blog-page .site-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
+.blog-page .article-card {
+  contain-intrinsic-size: auto 460px;
+}
+
+.blog-page .article-sidebar,
+.blog-page .site-footer {
+  contain-intrinsic-size: auto 320px;
+}
+
 /* Contrast fixes for the blog landing page call-to-action card. */
 .blog-page .blog-feature-band {
   background: linear-gradient(145deg, #eef7f8, #f7fafb) !important;
