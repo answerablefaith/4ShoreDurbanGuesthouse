@@ -16,7 +16,7 @@ NAV = '''<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
 
 START = '<nav class="site-nav" id="site-nav" aria-label="Primary navigation">'
 END = '</nav>'
-FORM_HANDLER = ' <script src="form-handler.js?v=20260702-formsubmit4"></script>\n </body>'
+FORM_HANDLER = ' <script src="form-handler.js?v=20260702-formsubmit5"></script>\n </body>'
 
 try:
     html = HOME.read_text(encoding="utf-8")
