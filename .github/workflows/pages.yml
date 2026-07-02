@@ -24,16 +24,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Add homepage navigation and form handler
+      - name: Add homepage Home and Blog links
         run: |
-          python - <<'PY'
+          python3 - <<'PY'
           from pathlib import Path
           import re
 
           home = Path("index.html")
-          html = home.read_text()
+          html = home.read_text(encoding="utf-8")
 
-          homepage_nav = '''<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          nav = '''<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
  <a href="#home">Home</a>
  <a href="#gallery">Gallery</a>
  <a href="#about">About</a>
@@ -47,21 +47,19 @@ jobs:
 
           html = re.sub(
               r'<nav class="site-nav" id="site-nav" aria-label="Primary navigation">.*?</nav>',
-              homepage_nav,
+              nav,
               html,
               count=1,
               flags=re.S,
           )
 
-          if 'form-handler.js' not in html:
-              html = re.sub(
-                  r'(\s*<script src="script\.js\?v=[^"]+"></script>)',
-                  r'\1\n\t <script src="form-handler.js?v=20260702-formsubmit2"></script>',
-                  html,
-                  count=1,
+          if "form-handler.js" not in html:
+              html = html.replace(
+                  '<script src="script.js?v=20260517-gallery-fix1"></script>',
+                  '<script src="script.js?v=20260517-gallery-fix1"></script>\n\t <script src="form-handler.js?v=20260702-formsubmit2"></script>'
               )
 
-          home.write_text(html)
+          home.write_text(html, encoding="utf-8")
           PY
 
       - name: Setup Pages
