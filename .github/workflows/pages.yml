@@ -24,6 +24,9 @@ jobs:
       - name: Add homepage menu links
         run: python3 tools/patch-pages-menu.py
 
+      - name: Patch blog mobile article heroes
+        run: python3 tools/patch-blog-mobile.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
