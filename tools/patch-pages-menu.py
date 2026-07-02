@@ -42,35 +42,39 @@ def optimise_img(match):
     tag = add_attr(tag, "fetchpriority", "low")
     return tag
 
-try:
-    html = HOME.read_text(encoding="utf-8")
 
-    start = html.find(START)
-    end = html.find(END, start) if start != -1 else -1
-    if start != -1 and end != -1:
-        html = html[:start] + NAV + html[end + len(END):]
-        print("Homepage menu patched with Home and Blog links.")
-    else:
-        print("Homepage nav not found; leaving menu unchanged.")
-
-    html = html.replace(
-        '<link rel="preload" as="image" href="assets/images/explore/outside-9.jpg">',
-        '<link rel="preload" as="image" href="assets/images/brand/4shore-logo.png" fetchpriority="high">'
-    )
+def optimise_html(path):
+    html = path.read_text(encoding="utf-8")
 
     html = re.sub(r'<img\b[^>]*>', optimise_img, html)
+    html = re.sub(r'<script src="([^"]+)"></script>', r'<script src="\1" defer></script>', html)
 
-    html = re.sub(
-        r'<script src="script\.js\?v=([^"]+)"></script>',
-        r'<script src="script.js?v=\1" defer></script>',
-        html,
-        count=1,
-    )
+    if path == HOME:
+        start = html.find(START)
+        end = html.find(END, start) if start != -1 else -1
+        if start != -1 and end != -1:
+            html = html[:start] + NAV + html[end + len(END):]
+            print("Homepage menu patched with Home and Blog links.")
+        else:
+            print("Homepage nav not found; leaving menu unchanged.")
 
-    if "form-handler.js" not in html and "</body>" in html:
-        html = html.replace("</body>", FORM_HANDLER, 1)
-        print("Homepage FormSubmit handler added.")
+        html = html.replace(
+            '<link rel="preload" as="image" href="assets/images/explore/outside-9.jpg">',
+            '<link rel="preload" as="image" href="assets/images/brand/4shore-logo.png" fetchpriority="high">'
+        )
 
-    HOME.write_text(html, encoding="utf-8")
+        if "form-handler.js" not in html and "</body>" in html:
+            html = html.replace("</body>", FORM_HANDLER, 1)
+            print("Homepage FormSubmit handler added.")
+
+    path.write_text(html, encoding="utf-8")
+
+
+try:
+    for html_path in sorted(Path(".").glob("**/*.html")):
+        if ".git" in html_path.parts:
+            continue
+        optimise_html(html_path)
+        print(f"Optimised {html_path}")
 except Exception as exc:
-    print(f"Homepage patch skipped: {exc}")
+    print(f"Static page optimisation skipped: {exc}")
