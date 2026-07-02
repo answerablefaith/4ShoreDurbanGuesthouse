@@ -27,6 +27,9 @@ jobs:
       - name: Patch blog mobile article heroes
         run: python3 tools/patch-blog-mobile.py
 
+      - name: Force clean blog mobile heroes
+        run: python3 tools/force-blog-mobile-clean.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
