@@ -21,6 +21,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Add homepage menu links
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+          start_marker = '<nav class="site-nav" id="site-nav" aria-label="Primary navigation">'
+          end_marker = '</nav>'
+
+          nav = '''<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+ <a href="#home">Home</a>
+ <a href="#gallery">Gallery</a>
+ <a href="#about">About</a>
+ <a href="#rooms">Rooms</a>
+ <a href="#explore">The Bluff</a>
+ <a href="#reviews">Reviews</a>
+ <a href="#rates">Rates</a>
+ <a href="#directions">Find us</a>
+ <a href="blog/">Blog</a>
+ </nav>'''
+
+          start = html.find(start_marker)
+          if start != -1:
+              end = html.find(end_marker, start)
+              if end != -1:
+                  html = html[:start] + nav + html[end + len(end_marker):]
+                  path.write_text(html, encoding='utf-8')
+          PY
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
