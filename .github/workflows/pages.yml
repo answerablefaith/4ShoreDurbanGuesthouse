@@ -24,6 +24,46 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Add homepage navigation and form handler
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          home = Path("index.html")
+          html = home.read_text()
+
+          homepage_nav = '''<nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+ <a href="#home">Home</a>
+ <a href="#gallery">Gallery</a>
+ <a href="#about">About</a>
+ <a href="#rooms">Rooms</a>
+ <a href="#explore">The Bluff</a>
+ <a href="#reviews">Reviews</a>
+ <a href="#rates">Rates</a>
+ <a href="#directions">Find us</a>
+ <a href="blog/">Blog</a>
+ </nav>'''
+
+          html = re.sub(
+              r'<nav class="site-nav" id="site-nav" aria-label="Primary navigation">.*?</nav>',
+              homepage_nav,
+              html,
+              count=1,
+              flags=re.S,
+          )
+
+          if 'form-handler.js' not in html:
+              html = re.sub(
+                  r'(\s*<script src="script\.js\?v=[^"]+"></script>)',
+                  r'\1\n\t <script src="form-handler.js?v=20260702-formsubmit2"></script>',
+                  html,
+                  count=1,
+              )
+
+          home.write_text(html)
+          PY
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
