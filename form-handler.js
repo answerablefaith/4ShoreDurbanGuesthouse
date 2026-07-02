@@ -1,7 +1,7 @@
 (() => {
-  const endpoint = "https://formsubmit.co/ajax/4shoredurban@gmail.com";
+  const endpoint = "https://formsubmit.co/ajax/hnoliver92@gmail.com";
   const successMessage = "Thanks, your enquiry has been sent. Winston will reply as soon as possible.";
-  const activationMessage = "Your enquiry was received by the form service, but 4Shore may still need to confirm FormSubmit. Please check 4shoredurban@gmail.com for a FormSubmit activation email, or call +27 83 254 4825.";
+  const activationMessage = "Your enquiry was received by the form service, but the recipient may still need to confirm FormSubmit. Please check hnoliver92@gmail.com for a FormSubmit activation email, or call +27 83 254 4825.";
   const errorMessage = "The form could not send just now. Please try again, or call +27 83 254 4825.";
 
   function setFormStatus(form, message, state = "") {
@@ -35,7 +35,6 @@
       _template: "table",
       _captcha: "false",
       _replyto: email,
-      _cc: "hnoliver92@gmail.com",
       _honey: getValue(form, "bot_field"),
       name: getValue(form, "guest_name"),
       email,
