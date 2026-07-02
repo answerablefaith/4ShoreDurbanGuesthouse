@@ -60,6 +60,23 @@ jobs:
                   ' <a href="#directions">Directions</a>\n <a href="blog/">Blog</a>\n </div>'
               )
 
+          # Add the GitHub Pages form handler after the main site script.
+          # This cuts out Netlify Forms on the deployed site and submits to FormSubmit instead.
+          form_handler_version = "20260702-formsubmit1"
+          if "form-handler.js" not in content:
+              content = re.sub(
+                  r'(\s*<script src="script\.js\?v=[^"]+"></script>)',
+                  r'\1\n\t <script src="form-handler.js?v=' + form_handler_version + r'"></script>',
+                  content,
+                  count=1,
+              )
+          else:
+              content = re.sub(
+                  r'src="form-handler\.js\?v=[^"]+"',
+                  f'src="form-handler.js?v={form_handler_version}"',
+                  content,
+              )
+
           home.write_text(content)
 
           def ensure_stylesheet(html: str, href: str, version: str) -> str:
