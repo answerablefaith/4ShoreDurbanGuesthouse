@@ -209,3 +209,83 @@ body.blog-page {
 .blog-page .article-sidebar-card li + li {
   margin-top: .35rem !important;
 }
+
+/* Match the home page mobile header behaviour on all blog pages. */
+@media (max-width: 920px) {
+  .blog-page .site-header,
+  .blog-page .site-header.is-transparent,
+  .blog-page .site-header:not(.is-scrolled) {
+    grid-template-columns: auto auto !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+    padding: 14px 22px !important;
+  }
+
+  .blog-page .header-actions,
+  .blog-page .site-header .header-actions {
+    display: none !important;
+  }
+
+  .blog-page .nav-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    min-height: 42px !important;
+    padding: 10px 14px !important;
+    background: transparent !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 2px !important;
+    color: var(--ink) !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    justify-self: end !important;
+  }
+
+  .blog-page .nav-toggle .bars {
+    display: grid !important;
+    gap: 4px !important;
+    width: 18px !important;
+  }
+
+  .blog-page .nav-toggle .bars span {
+    display: block !important;
+    height: 1.5px !important;
+    background: currentColor !important;
+  }
+
+  .blog-page .site-nav {
+    position: fixed !important;
+    top: 78px !important;
+    left: 14px !important;
+    right: 14px !important;
+    display: none !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    justify-self: auto !important;
+    gap: 4px !important;
+    padding: 20px !important;
+    background: var(--cream) !important;
+    border: 1px solid var(--line) !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: var(--shadow-lg) !important;
+    z-index: 1001 !important;
+  }
+
+  body.nav-open.blog-page .site-nav,
+  body.blog-page.nav-open .site-nav {
+    display: flex !important;
+  }
+
+  .blog-page .site-nav a,
+  .blog-page .site-header:not(.is-scrolled) .site-nav a {
+    padding: 14px 12px !important;
+    color: var(--ink) !important;
+    text-align: left !important;
+  }
+
+  .blog-page .blog-hero {
+    padding-top: 118px !important;
+  }
+}
