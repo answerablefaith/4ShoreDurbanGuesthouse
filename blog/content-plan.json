@@ -1,0 +1,86 @@
+{
+  "updated": "2026-07-02",
+  "published": [
+    {
+      "date": "2026-07-01",
+      "title": "Where to stay near Anstey's Beach in Bluff, Durban",
+      "slug": "where-to-stay-near-ansteys-beach",
+      "primaryKeyword": "accommodation near Anstey's Beach",
+      "secondaryKeywords": [
+        "Anstey's Beach guesthouse",
+        "Bluff Durban accommodation",
+        "Durban beach accommodation"
+      ],
+      "topicCluster": "Accommodation choice",
+      "searchIntent": "Guests comparing where to stay near Anstey's Beach",
+      "seasonality": "Evergreen",
+      "internalLinksUsed": [
+        "../../#rooms",
+        "../../#rates",
+        "../../#directions",
+        "../../#availability-form"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Things to do near Bluff, Durban when you stay by the beach",
+      "slug": "things-to-do-near-bluff-durban",
+      "primaryKeyword": "things to do near Bluff Durban",
+      "secondaryKeywords": [
+        "Anstey's Beach",
+        "Durban beach stay",
+        "Bluff local guide"
+      ],
+      "topicCluster": "Local area guide",
+      "searchIntent": "Guests planning activities near Bluff and Anstey's Beach",
+      "seasonality": "Evergreen with winter whale season relevance",
+      "internalLinksUsed": [
+        "../../#explore",
+        "../../#directions",
+        "../../#availability-form"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Why secure parking matters when booking Durban beach accommodation",
+      "slug": "beachfront-guesthouse-with-secure-parking-durban",
+      "primaryKeyword": "Durban accommodation with secure parking",
+      "secondaryKeywords": [
+        "secure parking Durban guesthouse",
+        "beachfront accommodation Durban",
+        "Bluff Durban accommodation"
+      ],
+      "topicCluster": "Booking confidence",
+      "searchIntent": "Guests checking practical booking details before choosing accommodation",
+      "seasonality": "Evergreen",
+      "internalLinksUsed": [
+        "../../#rooms",
+        "../../#rates",
+        "../../#availability-form"
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "title": "How to plan a winter beach stay in Durban for whale season",
+      "slug": "winter-beach-stay-durban-whale-season",
+      "primaryKeyword": "winter beach stay Durban whale season",
+      "secondaryKeywords": [
+        "Durban beach accommodation",
+        "Bluff Durban accommodation",
+        "accommodation near Anstey's Beach",
+        "Anstey's Beach guesthouse"
+      ],
+      "topicCluster": "Seasonal beach travel",
+      "searchIntent": "Guests planning a winter Durban beach break with whale season interest",
+      "seasonality": "Winter, July, whale season, school holidays",
+      "internalLinksUsed": [
+        "../../#rooms",
+        "../../#rates",
+        "../../#directions",
+        "../../#availability-form",
+        "../things-to-do-near-bluff-durban/",
+        "../beachfront-guesthouse-with-secure-parking-durban/"
+      ]
+    }
+  ]
+}
