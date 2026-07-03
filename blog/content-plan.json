@@ -165,6 +165,51 @@
       "sitemapUpdated": true,
       "llmsTxtUpdated": true,
       "runAction": "created"
+    },
+    {
+      "date": "2026-07-03",
+      "dateUpdated": "2026-07-03",
+      "title": "Durban beach weekend accommodation: a practical Bluff stay guide",
+      "slug": "durban-beach-weekend-accommodation-bluff",
+      "url": "https://www.4shoreguesthouse.co.za/blog/durban-beach-weekend-accommodation-bluff/",
+      "primaryKeyword": "Durban beach weekend accommodation",
+      "secondaryKeywords": [
+        "Bluff Durban accommodation",
+        "accommodation near Anstey's Beach",
+        "Durban beach accommodation",
+        "direct booking guesthouse Durban"
+      ],
+      "topicCluster": "Weekend beach stays",
+      "searchIntent": "Guests planning a short Durban beach weekend and comparing practical accommodation on the Bluff",
+      "seasonality": "Evergreen with weekend, school-holiday and short-break relevance",
+      "serpGapSummary": "Search results were broad and listing-led, so this guide answers the practical weekend questions guests ask before booking: arrival, parking, beach rhythm, rooms, food plans and direct contact.",
+      "competingPageAnglesNoticed": [
+        "Generic accommodation listings",
+        "Broad Durban accommodation pages",
+        "Pages that do not explain a simple weekend rhythm from Bluff"
+      ],
+      "firstHandLocalValueAdded": "Uses 4Shore's known Foreshore Drive location across from Anstey's Beach, secure on-site parking, nine en-suite rooms with private entrances, Wi-Fi, air-conditioning and direct booking with Winston.",
+      "internalLinksUsed": [
+        "../../#rooms",
+        "../../#rates",
+        "../../#directions",
+        "../../#availability-form",
+        "../where-to-stay-near-ansteys-beach/",
+        "../things-to-do-near-bluff-durban/",
+        "../beachfront-guesthouse-with-secure-parking-durban/",
+        "../family-accommodation-bluff-durban/"
+      ],
+      "imageUsed": "assets/images/explore/outside-10.jpg",
+      "schemaTypesAdded": [
+        "BlogPosting",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "sitemapUpdated": true,
+      "llmsTxtUpdated": true,
+      "blogIndexVisibilityVerified": true,
+      "pagesWorkflowPushOnMainVerified": true,
+      "runAction": "created"
     }
   ]
 }
