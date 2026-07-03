@@ -1,8 +1,11 @@
-.blog-page .blog-feature-band {
+.blog-page .blog-feature-band,
+.blog-page .blog-feature-band * {
   color: #fffaf0 !important;
+  text-shadow: none !important;
 }
 
 .blog-page .blog-feature-copy h2,
+.blog-page .blog-feature-copy h2 *,
 .blog-page .blog-feature-copy p,
 .blog-page .blog-feature-copy .blog-kicker,
 .blog-page .blog-feature-copy a {
@@ -12,6 +15,10 @@
 
 .blog-page .blog-feature-copy .blog-kicker::before {
   background: #fffaf0 !important;
+}
+
+.blog-page .blog-feature-copy .button.primary {
+  color: #fffaf0 !important;
 }
 
 .blog-page .blog-feature-copy .button.secondary,
