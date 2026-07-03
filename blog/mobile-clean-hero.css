@@ -1,47 +1,53 @@
+.blog-page .article-hero {
+  min-height: auto !important;
+  padding: 132px clamp(1.4rem, 4vw, 4.5rem) 3rem !important;
+  background: #f7fafb !important;
+  background-image: none !important;
+  color: #14202a !important;
+}
+
+.blog-page .article-hero::before,
+.blog-page .article-hero::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+.blog-page .article-hero h1 {
+  max-width: 920px !important;
+  margin: 0 !important;
+  color: #0d2326 !important;
+  font-size: clamp(2.6rem, 7vw, 5.6rem) !important;
+  line-height: 1 !important;
+  letter-spacing: -.055em !important;
+  text-shadow: none !important;
+}
+
+.blog-page .article-hero h1 em {
+  color: #1c6378 !important;
+}
+
+.blog-page .article-kicker,
+.blog-page .article-meta {
+  color: #0a3744 !important;
+  text-shadow: none !important;
+}
+
+.blog-page .article-layout {
+  margin-top: 0 !important;
+}
+
 @media (max-width: 680px) {
   .blog-page .article-hero {
-    min-height: auto !important;
     padding: 118px 22px 28px !important;
-    background: #f7fafb !important;
-    background-image: none !important;
-    color: #14202a !important;
-  }
-
-  .blog-page .article-hero::before,
-  .blog-page .article-hero::after {
-    display: none !important;
-    content: none !important;
-    background: none !important;
-    background-image: none !important;
   }
 
   .blog-page .article-hero h1 {
     max-width: none !important;
-    margin: 0 !important;
-    color: #0d2326 !important;
     font-size: clamp(2.1rem, 10vw, 3rem) !important;
     line-height: 1.05 !important;
     letter-spacing: -.04em !important;
-    text-shadow: none !important;
-  }
-
-  .blog-page .article-hero h1 em {
-    color: #1c6378 !important;
-  }
-
-  .blog-page .article-kicker {
-    justify-content: flex-start !important;
-    margin-bottom: .75rem !important;
-    color: #0a3744 !important;
-    text-shadow: none !important;
-  }
-
-  .blog-page .article-meta {
-    margin: 1rem 0 0 !important;
-    color: #8a7652 !important;
-    font-size: .74rem !important;
-    line-height: 1.35 !important;
-    text-shadow: none !important;
   }
 
   .blog-page .article-layout {
