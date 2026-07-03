@@ -1,23 +1,21 @@
-@media (max-width: 680px) {
-  .blog-page .blog-feature-band {
-    color: #fffaf0 !important;
-  }
+.blog-page .blog-feature-band {
+  color: #fffaf0 !important;
+}
 
-  .blog-page .blog-feature-copy h2,
-  .blog-page .blog-feature-copy p,
-  .blog-page .blog-feature-copy .blog-kicker,
-  .blog-page .blog-feature-copy a {
-    color: #fffaf0 !important;
-    text-shadow: none !important;
-  }
+.blog-page .blog-feature-copy h2,
+.blog-page .blog-feature-copy p,
+.blog-page .blog-feature-copy .blog-kicker,
+.blog-page .blog-feature-copy a {
+  color: #fffaf0 !important;
+  text-shadow: none !important;
+}
 
-  .blog-page .blog-feature-copy .blog-kicker::before {
-    background: #fffaf0 !important;
-  }
+.blog-page .blog-feature-copy .blog-kicker::before {
+  background: #fffaf0 !important;
+}
 
-  .blog-page .blog-feature-copy .button.secondary,
-  .blog-page .blog-feature-copy .button.ghost {
-    color: #fffaf0 !important;
-    border-color: #fffaf0 !important;
-  }
+.blog-page .blog-feature-copy .button.secondary,
+.blog-page .blog-feature-copy .button.ghost {
+  color: #fffaf0 !important;
+  border-color: #fffaf0 !important;
 }
