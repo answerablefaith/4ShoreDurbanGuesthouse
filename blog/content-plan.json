@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02",
+  "updated": "2026-07-03",
   "published": [
     {
       "date": "2026-07-01",
@@ -116,6 +116,47 @@
         "../winter-beach-stay-durban-whale-season/"
       ],
       "imageUsed": "assets/images/property/property-room-courtyard.jpg",
+      "schemaTypesAdded": [
+        "BlogPosting",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "sitemapUpdated": true,
+      "llmsTxtUpdated": true,
+      "runAction": "created"
+    },
+    {
+      "date": "2026-07-03",
+      "dateUpdated": "2026-07-03",
+      "title": "Business accommodation in Bluff, Durban near Anstey's Beach",
+      "slug": "business-accommodation-bluff-durban",
+      "url": "https://www.4shoreguesthouse.co.za/blog/business-accommodation-bluff-durban/",
+      "primaryKeyword": "business accommodation Bluff Durban",
+      "secondaryKeywords": [
+        "Bluff Durban accommodation",
+        "Durban accommodation with secure parking",
+        "Anstey's Beach guesthouse",
+        "beach accommodation for work trips Durban"
+      ],
+      "topicCluster": "Business stays",
+      "searchIntent": "Business guests comparing practical accommodation in Bluff, Durban",
+      "seasonality": "Evergreen weekday and contractor travel relevance",
+      "serpGapSummary": "Lightweight search returned broad or weakly matched accommodation results, so the article focuses on a practical gap: what work travellers should check before booking in Bluff, including parking, Wi-Fi, room privacy, arrival details and direct contact.",
+      "competingPageAnglesNoticed": [
+        "Generic accommodation listings",
+        "Broad Bluff area pages",
+        "Pages that do not answer business-travel checks directly"
+      ],
+      "firstHandLocalValueAdded": "Uses 4Shore's known room, parking, Wi-Fi, air-conditioning, private entrance and Anstey's Beach location details without inventing distances or policies.",
+      "internalLinksUsed": [
+        "../../#rooms",
+        "../../#rates",
+        "../../#directions",
+        "../../#availability-form",
+        "../beachfront-guesthouse-with-secure-parking-durban/",
+        "../where-to-stay-near-ansteys-beach/"
+      ],
+      "imageUsed": "assets/images/property/inside-10.jpg",
       "schemaTypesAdded": [
         "BlogPosting",
         "FAQPage",
