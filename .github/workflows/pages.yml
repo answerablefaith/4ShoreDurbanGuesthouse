@@ -1,9 +1,8 @@
 name: Deploy static site to GitHub Pages
 
-# Manual fallback only.
-# The live 4Shore site is served from the repo/custom-domain Pages setup,
-# so weekly blog commits should not trigger this workflow and generate failure emails.
 on:
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
