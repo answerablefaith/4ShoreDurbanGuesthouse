@@ -1,6 +1,56 @@
 {
-  "updated": "2026-07-03",
+  "updated": "2026-07-06",
   "published": [
+    {
+      "date": "2026-07-06",
+      "dateUpdated": "2026-07-06",
+      "title": "Hotels on the Bluff or a guesthouse near Anstey's Beach?",
+      "slug": "hotels-on-the-bluff-guesthouse-guide",
+      "url": "https://www.4shoreguesthouse.co.za/blog/hotels-on-the-bluff-guesthouse-guide/",
+      "primaryKeyword": "hotels on the Bluff",
+      "secondaryKeywords": [
+        "B&B-style guesthouse Bluff",
+        "bed and breakfast-style guesthouse Durban",
+        "Anstey's Beach guesthouse",
+        "Bluff Durban accommodation"
+      ],
+      "topicCluster": "Accommodation comparison",
+      "searchIntent": "Guests searching for hotels on the Bluff and comparing accurate guesthouse or B&B-style alternatives near Anstey's Beach",
+      "seasonality": "Evergreen with July event, winter beach, whale season and school-holiday comparison relevance",
+      "duplicateCheckSummary": "Existing guides covered Anstey's Beach accommodation, local things to do, secure parking, whale season, family stays, business stays and weekend stays. None directly answered hotel-search comparison intent or explained how to compare a hotel with a B&B-style guesthouse without mislabelling 4Shore.",
+      "freshnessTrendSignal": "Lightweight current search indicated ongoing July Durban travel interest around the Durban July period, winter coastal travel, school-holiday planning, whale season and sardine-run interest. The topic captures persistent hotel-search behaviour while adding accurate guesthouse wording.",
+      "serpGapSummary": "Hotel and accommodation searches are often listing-led. This article adds a direct reader-first comparison that explains the difference between hotels and guesthouses, supports B&B-style search intent, and gives practical booking checks.",
+      "competingPageAnglesNoticed": [
+        "Generic hotel and accommodation listing pages",
+        "Broad Durban area pages",
+        "Pages that do not explain when a guesthouse may be the better fit",
+        "Pages that risk mislabelling guesthouses as hotels"
+      ],
+      "firstHandLocalValueAdded": "Uses 4Shore's known location at 28 Foreshore Drive, across Foreshore Drive from Anstey's Beach, nine en-suite rooms, private entrances, secure on-site parking, Wi-Fi, air-conditioning and direct booking with Winston.",
+      "internalLinksUsed": [
+        "../../#rooms",
+        "../../#rates",
+        "../../#directions",
+        "../../#availability-form",
+        "../where-to-stay-near-ansteys-beach/",
+        "../family-accommodation-bluff-durban/",
+        "../business-accommodation-bluff-durban/",
+        "../beachfront-guesthouse-with-secure-parking-durban/"
+      ],
+      "imageUsed": "assets/images/property/property-ocean-patio.jpg",
+      "schemaTypesAdded": [
+        "BlogPosting",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "sitemapUpdated": true,
+      "llmsTxtUpdated": true,
+      "blogIndexVisibilityVerified": true,
+      "pagesWorkflowPushOnMainVerified": true,
+      "hotelBnbSearchIntentHandledAccurately": true,
+      "editorialQualityRuleFollowed": true,
+      "runAction": "created"
+    },
     {
       "date": "2026-07-01",
       "title": "Where to stay near Anstey's Beach in Bluff, Durban",
