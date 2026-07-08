@@ -1,43 +1,42 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-08",
   "published": [
     {
-      "date": "2026-07-06",
-      "dateUpdated": "2026-07-06",
-      "title": "Hotels on the Bluff or a guesthouse near Anstey's Beach?",
-      "slug": "hotels-on-the-bluff-guesthouse-guide",
-      "url": "https://www.4shoreguesthouse.co.za/blog/hotels-on-the-bluff-guesthouse-guide/",
-      "primaryKeyword": "hotels on the Bluff",
+      "date": "2026-07-08",
+      "dateUpdated": "2026-07-08",
+      "title": "Rainy day ideas near Bluff, Durban from a beach base",
+      "slug": "rainy-day-ideas-bluff-durban",
+      "url": "https://www.4shoreguesthouse.com/blog/rainy-day-ideas-bluff-durban/",
+      "primaryKeyword": "rainy day ideas Bluff Durban",
       "secondaryKeywords": [
-        "B&B-style guesthouse Bluff",
-        "bed and breakfast-style guesthouse Durban",
+        "things to do in Durban when it rains",
+        "rainy day activities Durban",
         "Anstey's Beach guesthouse",
         "Bluff Durban accommodation"
       ],
-      "topicCluster": "Accommodation comparison",
-      "searchIntent": "Guests searching for hotels on the Bluff and comparing accurate guesthouse or B&B-style alternatives near Anstey's Beach",
-      "seasonality": "Evergreen with July event, winter beach, whale season and school-holiday comparison relevance",
-      "duplicateCheckSummary": "Existing guides covered Anstey's Beach accommodation, local things to do, secure parking, whale season, family stays, business stays and weekend stays. None directly answered hotel-search comparison intent or explained how to compare a hotel with a B&B-style guesthouse without mislabelling 4Shore.",
-      "freshnessTrendSignal": "Lightweight current search indicated ongoing July Durban travel interest around the Durban July period, winter coastal travel, school-holiday planning, whale season and sardine-run interest. The topic captures persistent hotel-search behaviour while adding accurate guesthouse wording.",
-      "serpGapSummary": "Hotel and accommodation searches are often listing-led. This article adds a direct reader-first comparison that explains the difference between hotels and guesthouses, supports B&B-style search intent, and gives practical booking checks.",
-      "competingPageAnglesNoticed": [
-        "Generic hotel and accommodation listing pages",
-        "Broad Durban area pages",
-        "Pages that do not explain when a guesthouse may be the better fit",
-        "Pages that risk mislabelling guesthouses as hotels"
-      ],
-      "firstHandLocalValueAdded": "Uses 4Shore's known location at 28 Foreshore Drive, across Foreshore Drive from Anstey's Beach, nine en-suite rooms, private entrances, secure on-site parking, Wi-Fi, air-conditioning and direct booking with Winston.",
+      "primarySearchQuery": "rainy day ideas Bluff Durban",
+      "secondaryQueryFamily": "things to do in Durban when it rains; rainy day activities Durban; wet weather beach stay Durban",
+      "topicCluster": "Local experience and wet-weather planning",
+      "searchIntent": "Guests staying near Anstey's Beach who want simple wet-weather plans without giving up the beach base",
+      "topicType": "local experience",
+      "duplicateCheckSummary": "Existing posts cover accommodation choice, things to do, parking, whale season, family stays, business stays, weekend stays, hotel-search comparison and direct booking. This article narrows the intent to wet-weather planning and does not repeat room, parking or generic things-to-do advice beyond relevant internal links.",
+      "trendKeywordResearchSummary": "Lightweight current search found ongoing interest around Durban winter travel, beach activity planning, rainy-day outings and local Bluff/Anstey's Beach activity searches. The chosen topic uses that demand without keyword stuffing.",
+      "freshnessTrendSignal": "July winter weather planning, school-holiday relevance and recurring searches for what to do in Durban when weather changes.",
+      "serpGapSummary": "Many rainy-day results are broad Durban lists. This article adds a guesthouse-specific decision plan for people based on the Bluff near Anstey's Beach.",
+      "firstHandLocalValueAdded": "Uses 4Shore's known position across Foreshore Drive from Anstey's Beach, secure on-site parking, Wi-Fi, air-conditioning, nine en-suite rooms with private entrances, and direct contact with Winston.",
+      "hemingwayGrade9ReadabilityCheck": "Passed by editorial review: short sentences, plain words, active voice, low jargon and clear paragraph flow.",
+      "qualityNoRepetitionCheck": "Passed: each section adds a different decision point: beach gap, meal plan, backup outing, room time, FAQs and booking next step.",
       "internalLinksUsed": [
         "../../#rooms",
         "../../#rates",
         "../../#directions",
         "../../#availability-form",
+        "../things-to-do-near-bluff-durban/",
         "../where-to-stay-near-ansteys-beach/",
-        "../family-accommodation-bluff-durban/",
-        "../business-accommodation-bluff-durban/",
-        "../beachfront-guesthouse-with-secure-parking-durban/"
+        "../durban-beach-weekend-accommodation-bluff/",
+        "../winter-beach-stay-durban-whale-season/"
       ],
-      "imageUsed": "assets/images/property/property-ocean-patio.jpg",
+      "imageUsed": "assets/images/explore/outside-11.jpg",
       "schemaTypesAdded": [
         "BlogPosting",
         "FAQPage",
@@ -46,220 +45,118 @@
       "sitemapUpdated": true,
       "llmsTxtUpdated": true,
       "blogIndexVisibilityVerified": true,
-      "pagesWorkflowPushOnMainVerified": true,
-      "hotelBnbSearchIntentHandledAccurately": true,
-      "editorialQualityRuleFollowed": true,
+      "dotComDomainVerified": true,
+      "deploymentReadiness": "Pages workflow deploys on push to main; repo permissions include pull and push.",
+      "searchConsoleOrWebmasterSubmission": "unavailable from runtime",
       "runAction": "created"
     },
     {
-      "date": "2026-07-01",
-      "title": "Where to stay near Anstey's Beach in Bluff, Durban",
-      "slug": "where-to-stay-near-ansteys-beach",
-      "primaryKeyword": "accommodation near Anstey's Beach",
-      "secondaryKeywords": [
-        "Anstey's Beach guesthouse",
-        "Bluff Durban accommodation",
-        "Durban beach accommodation"
-      ],
-      "topicCluster": "Accommodation choice",
-      "searchIntent": "Guests comparing where to stay near Anstey's Beach",
-      "seasonality": "Evergreen",
-      "internalLinksUsed": [
-        "../../#rooms",
-        "../../#rates",
-        "../../#directions",
-        "../../#availability-form"
-      ]
+      "date": "2026-07-06",
+      "dateUpdated": "2026-07-06",
+      "title": "Direct booking a Bluff guesthouse: what to ask before you confirm",
+      "slug": "direct-booking-guesthouse-durban",
+      "url": "https://www.4shoreguesthouse.com/blog/direct-booking-guesthouse-durban/",
+      "primaryKeyword": "direct booking guesthouse Durban",
+      "secondaryKeywords": ["Bluff Durban guesthouse", "Anstey's Beach accommodation", "guesthouse direct booking"],
+      "topicCluster": "Direct booking",
+      "searchIntent": "Guests checking what to ask before booking a guesthouse directly",
+      "topicType": "planning"
     },
     {
-      "date": "2026-07-01",
-      "title": "Things to do near Bluff, Durban when you stay by the beach",
-      "slug": "things-to-do-near-bluff-durban",
-      "primaryKeyword": "things to do near Bluff Durban",
-      "secondaryKeywords": [
-        "Anstey's Beach",
-        "Durban beach stay",
-        "Bluff local guide"
-      ],
-      "topicCluster": "Local area guide",
-      "searchIntent": "Guests planning activities near Bluff and Anstey's Beach",
-      "seasonality": "Evergreen with winter whale season relevance",
-      "internalLinksUsed": [
-        "../../#explore",
-        "../../#directions",
-        "../../#availability-form"
-      ]
-    },
-    {
-      "date": "2026-07-01",
-      "title": "Why secure parking matters when booking Durban beach accommodation",
-      "slug": "beachfront-guesthouse-with-secure-parking-durban",
-      "primaryKeyword": "Durban accommodation with secure parking",
-      "secondaryKeywords": [
-        "secure parking Durban guesthouse",
-        "beachfront accommodation Durban",
-        "Bluff Durban accommodation"
-      ],
-      "topicCluster": "Booking confidence",
-      "searchIntent": "Guests checking practical booking details before choosing accommodation",
-      "seasonality": "Evergreen",
-      "internalLinksUsed": [
-        "../../#rooms",
-        "../../#rates",
-        "../../#availability-form"
-      ]
-    },
-    {
-      "date": "2026-07-02",
-      "title": "How to plan a winter beach stay in Durban for whale season",
-      "slug": "winter-beach-stay-durban-whale-season",
-      "primaryKeyword": "winter beach stay Durban whale season",
-      "secondaryKeywords": [
-        "Durban beach accommodation",
-        "Bluff Durban accommodation",
-        "accommodation near Anstey's Beach",
-        "Anstey's Beach guesthouse"
-      ],
-      "topicCluster": "Seasonal beach travel",
-      "searchIntent": "Guests planning a winter Durban beach break with whale season interest",
-      "seasonality": "Winter, July, whale season, school holidays",
-      "internalLinksUsed": [
-        "../../#rooms",
-        "../../#rates",
-        "../../#directions",
-        "../../#availability-form",
-        "../things-to-do-near-bluff-durban/",
-        "../beachfront-guesthouse-with-secure-parking-durban/"
-      ]
-    },
-    {
-      "date": "2026-07-02",
-      "dateUpdated": "2026-07-02",
-      "title": "Family accommodation in Bluff, Durban near Anstey's Beach",
-      "slug": "family-accommodation-bluff-durban",
-      "url": "https://www.4shoreguesthouse.co.za/blog/family-accommodation-bluff-durban/",
-      "primaryKeyword": "family accommodation Bluff Durban",
-      "secondaryKeywords": [
-        "family accommodation near Anstey's Beach",
-        "school holiday accommodation Durban",
-        "Bluff Durban accommodation",
-        "Durban beach accommodation with secure parking"
-      ],
-      "topicCluster": "Family stays",
-      "searchIntent": "Families comparing practical beach accommodation in Bluff, Durban",
-      "seasonality": "Evergreen with school-holiday relevance",
-      "serpGapSummary": "Prominent search results lean towards listings or broad area pages. This article adds practical family planning details: room fit, secure parking, beach access, direct booking, and simple daily rhythm.",
-      "competingPageAnglesNoticed": [
-        "Generic accommodation listing pages",
-        "Broad Durban family travel pages",
-        "Area descriptions that do not explain room choice or direct booking"
-      ],
-      "firstHandLocalValueAdded": "Uses 4Shore's known location across Foreshore Drive from Anstey's Beach, nine en-suite rooms, private entrances, secure on-site parking, and direct enquiry booking with Winston.",
-      "internalLinksUsed": [
-        "../../#rooms",
-        "../../#rates",
-        "../../#directions",
-        "../../#availability-form",
-        "../where-to-stay-near-ansteys-beach/",
-        "../things-to-do-near-bluff-durban/",
-        "../beachfront-guesthouse-with-secure-parking-durban/",
-        "../winter-beach-stay-durban-whale-season/"
-      ],
-      "imageUsed": "assets/images/property/property-room-courtyard.jpg",
-      "schemaTypesAdded": [
-        "BlogPosting",
-        "FAQPage",
-        "BreadcrumbList"
-      ],
-      "sitemapUpdated": true,
-      "llmsTxtUpdated": true,
-      "runAction": "created"
-    },
-    {
-      "date": "2026-07-03",
-      "dateUpdated": "2026-07-03",
-      "title": "Business accommodation in Bluff, Durban near Anstey's Beach",
-      "slug": "business-accommodation-bluff-durban",
-      "url": "https://www.4shoreguesthouse.co.za/blog/business-accommodation-bluff-durban/",
-      "primaryKeyword": "business accommodation Bluff Durban",
-      "secondaryKeywords": [
-        "Bluff Durban accommodation",
-        "Durban accommodation with secure parking",
-        "Anstey's Beach guesthouse",
-        "beach accommodation for work trips Durban"
-      ],
-      "topicCluster": "Business stays",
-      "searchIntent": "Business guests comparing practical accommodation in Bluff, Durban",
-      "seasonality": "Evergreen weekday and contractor travel relevance",
-      "serpGapSummary": "Lightweight search returned broad or weakly matched accommodation results, so the article focuses on a practical gap: what work travellers should check before booking in Bluff, including parking, Wi-Fi, room privacy, arrival details and direct contact.",
-      "competingPageAnglesNoticed": [
-        "Generic accommodation listings",
-        "Broad Bluff area pages",
-        "Pages that do not answer business-travel checks directly"
-      ],
-      "firstHandLocalValueAdded": "Uses 4Shore's known room, parking, Wi-Fi, air-conditioning, private entrance and Anstey's Beach location details without inventing distances or policies.",
-      "internalLinksUsed": [
-        "../../#rooms",
-        "../../#rates",
-        "../../#directions",
-        "../../#availability-form",
-        "../beachfront-guesthouse-with-secure-parking-durban/",
-        "../where-to-stay-near-ansteys-beach/"
-      ],
-      "imageUsed": "assets/images/property/inside-10.jpg",
-      "schemaTypesAdded": [
-        "BlogPosting",
-        "FAQPage",
-        "BreadcrumbList"
-      ],
-      "sitemapUpdated": true,
-      "llmsTxtUpdated": true,
-      "runAction": "created"
+      "date": "2026-07-06",
+      "dateUpdated": "2026-07-06",
+      "title": "Hotels on the Bluff or a guesthouse near Anstey's Beach?",
+      "slug": "hotels-on-the-bluff-guesthouse-guide",
+      "url": "https://www.4shoreguesthouse.com/blog/hotels-on-the-bluff-guesthouse-guide/",
+      "primaryKeyword": "hotels on the Bluff",
+      "secondaryKeywords": ["B&B-style guesthouse Bluff", "bed and breakfast-style guesthouse Durban", "Anstey's Beach guesthouse", "Bluff Durban accommodation"],
+      "topicCluster": "Accommodation comparison",
+      "searchIntent": "Guests searching for hotels on the Bluff and comparing accurate guesthouse or B&B-style alternatives near Anstey's Beach",
+      "topicType": "accommodation"
     },
     {
       "date": "2026-07-03",
       "dateUpdated": "2026-07-03",
       "title": "Durban beach weekend accommodation: a practical Bluff stay guide",
       "slug": "durban-beach-weekend-accommodation-bluff",
-      "url": "https://www.4shoreguesthouse.co.za/blog/durban-beach-weekend-accommodation-bluff/",
+      "url": "https://www.4shoreguesthouse.com/blog/durban-beach-weekend-accommodation-bluff/",
       "primaryKeyword": "Durban beach weekend accommodation",
-      "secondaryKeywords": [
-        "Bluff Durban accommodation",
-        "accommodation near Anstey's Beach",
-        "Durban beach accommodation",
-        "direct booking guesthouse Durban"
-      ],
+      "secondaryKeywords": ["Bluff Durban accommodation", "accommodation near Anstey's Beach", "Durban beach accommodation", "direct booking guesthouse Durban"],
       "topicCluster": "Weekend beach stays",
       "searchIntent": "Guests planning a short Durban beach weekend and comparing practical accommodation on the Bluff",
-      "seasonality": "Evergreen with weekend, school-holiday and short-break relevance",
-      "serpGapSummary": "Search results were broad and listing-led, so this guide answers the practical weekend questions guests ask before booking: arrival, parking, beach rhythm, rooms, food plans and direct contact.",
-      "competingPageAnglesNoticed": [
-        "Generic accommodation listings",
-        "Broad Durban accommodation pages",
-        "Pages that do not explain a simple weekend rhythm from Bluff"
-      ],
-      "firstHandLocalValueAdded": "Uses 4Shore's known Foreshore Drive location across from Anstey's Beach, secure on-site parking, nine en-suite rooms with private entrances, Wi-Fi, air-conditioning and direct booking with Winston.",
-      "internalLinksUsed": [
-        "../../#rooms",
-        "../../#rates",
-        "../../#directions",
-        "../../#availability-form",
-        "../where-to-stay-near-ansteys-beach/",
-        "../things-to-do-near-bluff-durban/",
-        "../beachfront-guesthouse-with-secure-parking-durban/",
-        "../family-accommodation-bluff-durban/"
-      ],
-      "imageUsed": "assets/images/explore/outside-10.jpg",
-      "schemaTypesAdded": [
-        "BlogPosting",
-        "FAQPage",
-        "BreadcrumbList"
-      ],
-      "sitemapUpdated": true,
-      "llmsTxtUpdated": true,
-      "blogIndexVisibilityVerified": true,
-      "pagesWorkflowPushOnMainVerified": true,
-      "runAction": "created"
+      "topicType": "planning"
+    },
+    {
+      "date": "2026-07-03",
+      "dateUpdated": "2026-07-03",
+      "title": "Business accommodation in Bluff, Durban near Anstey's Beach",
+      "slug": "business-accommodation-bluff-durban",
+      "url": "https://www.4shoreguesthouse.com/blog/business-accommodation-bluff-durban/",
+      "primaryKeyword": "business accommodation Bluff Durban",
+      "secondaryKeywords": ["Bluff Durban accommodation", "Durban accommodation with secure parking", "Anstey's Beach guesthouse", "beach accommodation for work trips Durban"],
+      "topicCluster": "Business stays",
+      "searchIntent": "Business guests comparing practical accommodation in Bluff, Durban",
+      "topicType": "business"
+    },
+    {
+      "date": "2026-07-02",
+      "dateUpdated": "2026-07-02",
+      "title": "Family accommodation in Bluff, Durban near Anstey's Beach",
+      "slug": "family-accommodation-bluff-durban",
+      "url": "https://www.4shoreguesthouse.com/blog/family-accommodation-bluff-durban/",
+      "primaryKeyword": "family accommodation Bluff Durban",
+      "secondaryKeywords": ["family accommodation near Anstey's Beach", "school holiday accommodation Durban", "Bluff Durban accommodation", "Durban beach accommodation with secure parking"],
+      "topicCluster": "Family stays",
+      "searchIntent": "Families comparing practical beach accommodation in Bluff, Durban",
+      "topicType": "family"
+    },
+    {
+      "date": "2026-07-02",
+      "dateUpdated": "2026-07-02",
+      "title": "How to plan a winter beach stay in Durban for whale season",
+      "slug": "winter-beach-stay-durban-whale-season",
+      "url": "https://www.4shoreguesthouse.com/blog/winter-beach-stay-durban-whale-season/",
+      "primaryKeyword": "winter beach stay Durban whale season",
+      "secondaryKeywords": ["Durban beach accommodation", "Bluff Durban accommodation", "accommodation near Anstey's Beach", "Anstey's Beach guesthouse"],
+      "topicCluster": "Seasonal beach travel",
+      "searchIntent": "Guests planning a winter Durban beach break with whale season interest",
+      "topicType": "seasonal"
+    },
+    {
+      "date": "2026-07-01",
+      "dateUpdated": "2026-07-01",
+      "title": "Where to stay near Anstey's Beach in Bluff, Durban",
+      "slug": "where-to-stay-near-ansteys-beach",
+      "url": "https://www.4shoreguesthouse.com/blog/where-to-stay-near-ansteys-beach/",
+      "primaryKeyword": "accommodation near Anstey's Beach",
+      "secondaryKeywords": ["Anstey's Beach guesthouse", "Bluff Durban accommodation", "Durban beach accommodation"],
+      "topicCluster": "Accommodation choice",
+      "searchIntent": "Guests comparing where to stay near Anstey's Beach",
+      "topicType": "accommodation"
+    },
+    {
+      "date": "2026-07-01",
+      "dateUpdated": "2026-07-01",
+      "title": "Things to do near Bluff, Durban when you stay by the beach",
+      "slug": "things-to-do-near-bluff-durban",
+      "url": "https://www.4shoreguesthouse.com/blog/things-to-do-near-bluff-durban/",
+      "primaryKeyword": "things to do near Bluff Durban",
+      "secondaryKeywords": ["Anstey's Beach", "Durban beach stay", "Bluff local guide"],
+      "topicCluster": "Local area guide",
+      "searchIntent": "Guests planning activities near Bluff and Anstey's Beach",
+      "topicType": "local experience"
+    },
+    {
+      "date": "2026-07-01",
+      "dateUpdated": "2026-07-01",
+      "title": "Why secure parking matters when booking Durban beach accommodation",
+      "slug": "beachfront-guesthouse-with-secure-parking-durban",
+      "url": "https://www.4shoreguesthouse.com/blog/beachfront-guesthouse-with-secure-parking-durban/",
+      "primaryKeyword": "Durban accommodation with secure parking",
+      "secondaryKeywords": ["secure parking Durban guesthouse", "beachfront accommodation Durban", "Bluff Durban accommodation"],
+      "topicCluster": "Booking confidence",
+      "searchIntent": "Guests checking practical booking details before choosing accommodation",
+      "topicType": "planning"
     }
   ]
 }
