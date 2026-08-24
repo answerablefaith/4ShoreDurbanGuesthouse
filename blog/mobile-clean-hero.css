@@ -38,6 +38,64 @@
   margin-top: 0 !important;
 }
 
+/* Article content must never depend on reveal JavaScript to be readable. */
+.blog-page .article-hero-inner.reveal,
+.blog-page .article-body.reveal,
+.blog-page .article-layout .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+.blog-page .article-body,
+.blog-page .article-hero-inner,
+.blog-page .article-layout {
+  min-width: 0 !important;
+}
+
+.blog-page .article-body img,
+.blog-page .article-body video,
+.blog-page .article-body iframe {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.blog-page .article-body p,
+.blog-page .article-body li,
+.blog-page .article-body h1,
+.blog-page .article-body h2,
+.blog-page .article-body h3,
+.blog-page .article-body a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 920px) {
+  /* Fallback for automatically generated article headers that omit a menu button. */
+  .blog-page .site-header:not(:has(.nav-toggle)) {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .blog-page .site-header:not(:has(.nav-toggle)) .site-nav {
+    position: static !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .blog-page .site-header:not(:has(.nav-toggle)) .site-nav a {
+    padding: 7px 10px 7px 0 !important;
+    font-size: .82rem !important;
+  }
+}
+
 @media (max-width: 680px) {
   .blog-page .article-hero {
     padding: 118px 22px 28px !important;
@@ -51,7 +109,19 @@
   }
 
   .blog-page .article-layout {
+    display: block !important;
     width: min(100% - 28px, 1120px) !important;
     margin: 0 auto 4rem !important;
+  }
+
+  .blog-page .article-body {
+    width: 100% !important;
+    padding: 1.25rem !important;
+    border-radius: 1.25rem !important;
+  }
+
+  .blog-page .article-body figure {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
