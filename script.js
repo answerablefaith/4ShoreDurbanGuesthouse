@@ -126,20 +126,19 @@ const rooms = [
  view: "Garden view",
  level: "Ground floor",
  stay: "Twin or family",
- capacity: "Sleeps up to 5",
- beds: "2 doubles + 1 single",
+ capacity: "Sleeps up to 4",
+ beds: "2 double beds",
  rate: "from R 850",
  pricing: [
  ["Single", "R 850"],
  ["Couple", "R 950"],
  ["Twin", "R 1 000"],
  ["Triple", "R 1 200"],
- ["Family of 4", "R 1 300"],
- ["Family of 5", "R 1 400"]
+ ["Family of 4", "R 1 300"]
  ],
  tags: ["garden", "ground", "family"],
  summary:
- "The largest ground-floor room, three singles sharing or a family of up to five.",
+ "The largest ground-floor room, suitable for twin sharing, three guests or a family of four.",
  features: [
  "En-suite shower",
  "Patio with table and chair"
