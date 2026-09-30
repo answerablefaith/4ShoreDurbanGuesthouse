@@ -110,5 +110,73 @@
       "local guide"
     ],
     "location_note": "Across Foreshore Drive from 4Shore Guesthouse, near Anstey’s Beach / Bluff beachfront."
+  },
+  {
+    "original_file": "Pasted 30-09-2026 at 21.46.52.png",
+    "original_dimensions": "1448x1086",
+    "recommended_filename_webp": "assets/images/blog/double-rainbow-4shore-guesthouse-bluff-durban.webp",
+    "recommended_thumbnail_webp": "assets/images/blog/double-rainbow-4shore-guesthouse-bluff-durban-900.webp",
+    "fallback_jpg": "assets/images/blog/double-rainbow-4shore-guesthouse-bluff-durban.jpg",
+    "alt_text": "Double rainbow over 4Shore Guesthouse and neighbouring homes in Bluff, Durban",
+    "caption": "A double rainbow over 4Shore Guesthouse and the Bluff after rain.",
+    "best_blog_uses": [
+      "4Shore Guesthouse",
+      "Bluff Durban",
+      "rainbow",
+      "weather",
+      "beachfront accommodation"
+    ],
+    "location_note": "4Shore Guesthouse and the surrounding Bluff streetscape in Durban."
+  },
+  {
+    "original_file": "Pasted 30-09-2026 at 21.47.55.png",
+    "original_dimensions": "1448x1086",
+    "recommended_filename_webp": "assets/images/blog/driftwood-ansteys-beach-bluff-durban.webp",
+    "recommended_thumbnail_webp": "assets/images/blog/driftwood-ansteys-beach-bluff-durban-900.webp",
+    "fallback_jpg": "assets/images/blog/driftwood-ansteys-beach-bluff-durban.jpg",
+    "alt_text": "Driftwood washed onto the sand at Anstey’s Beach in Bluff, Durban",
+    "caption": "Driftwood in the surf on Anstey’s Beach near 4Shore Guesthouse.",
+    "best_blog_uses": [
+      "Anstey’s Beach",
+      "beach walks",
+      "Indian Ocean",
+      "Bluff Durban",
+      "coastal scenery"
+    ],
+    "location_note": "Anstey’s Beach / Bluff beachfront, near 4Shore Guesthouse."
+  },
+  {
+    "original_file": "Pasted 30-09-2026 at 21.52.47.png",
+    "original_dimensions": "1448x1086",
+    "recommended_filename_webp": "assets/images/blog/ansteys-beach-sunset-anglers-bluff-durban.webp",
+    "recommended_thumbnail_webp": "assets/images/blog/ansteys-beach-sunset-anglers-bluff-durban-900.webp",
+    "fallback_jpg": "assets/images/blog/ansteys-beach-sunset-anglers-bluff-durban.jpg",
+    "alt_text": "Sunset over Anstey’s Beach with anglers on the sand in Bluff, Durban",
+    "caption": "Anglers and beachgoers at sunset on Anstey’s Beach.",
+    "best_blog_uses": [
+      "sunset",
+      "fishing",
+      "Anstey’s Beach",
+      "Indian Ocean",
+      "Bluff Durban"
+    ],
+    "location_note": "Anstey’s Beach / Bluff beachfront, near 4Shore Guesthouse."
+  },
+  {
+    "original_file": "Pasted 30-09-2026 at 21.53.35.png",
+    "original_dimensions": "1448x1086",
+    "recommended_filename_webp": "assets/images/blog/heron-dunes-ansteys-beach-bluff-durban.webp",
+    "recommended_thumbnail_webp": "assets/images/blog/heron-dunes-ansteys-beach-bluff-durban-900.webp",
+    "fallback_jpg": "assets/images/blog/heron-dunes-ansteys-beach-bluff-durban.jpg",
+    "alt_text": "Heron standing in coastal dune vegetation near Anstey’s Beach in Bluff, Durban",
+    "caption": "A heron among the coastal dunes near Anstey’s Beach.",
+    "best_blog_uses": [
+      "birdwatching",
+      "wildlife",
+      "coastal dunes",
+      "Anstey’s Beach",
+      "Bluff Durban"
+    ],
+    "location_note": "Coastal dune vegetation near Anstey’s Beach / Bluff beachfront."
   }
 ]
