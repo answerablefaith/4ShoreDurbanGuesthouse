@@ -36,3 +36,24 @@ Guest-facing beach images for blog posts and local guide pages.
 - Alt text: Golden-hour beach walk at Anstey’s Beach in Bluff, Durban
 - Caption: Golden-hour beach walk on Anstey’s Beach near 4Shore Guesthouse.
 - Best uses: golden hour, beach walk, Anstey’s Beach, local guide
+
+## double-rainbow-4shore-guesthouse-bluff-durban.webp
+- Alt text: Double rainbow over 4Shore Guesthouse and neighbouring homes in Bluff, Durban
+- Caption: A double rainbow over 4Shore Guesthouse and the Bluff after rain.
+- Best uses: 4Shore Guesthouse, Bluff Durban, rainbow, weather, beachfront accommodation
+
+## driftwood-ansteys-beach-bluff-durban.webp
+- Alt text: Driftwood washed onto the sand at Anstey’s Beach in Bluff, Durban
+- Caption: Driftwood in the surf on Anstey’s Beach near 4Shore Guesthouse.
+- Best uses: Anstey’s Beach, beach walks, Indian Ocean, Bluff Durban, coastal scenery
+
+## ansteys-beach-sunset-anglers-bluff-durban.webp
+- Alt text: Sunset over Anstey’s Beach with anglers on the sand in Bluff, Durban
+- Caption: Anglers and beachgoers at sunset on Anstey’s Beach.
+- Best uses: sunset, fishing, Anstey’s Beach, Indian Ocean, Bluff Durban
+
+## heron-dunes-ansteys-beach-bluff-durban.webp
+- Alt text: Heron standing in coastal dune vegetation near Anstey’s Beach in Bluff, Durban
+- Caption: A heron among the coastal dunes near Anstey’s Beach.
+- Best uses: birdwatching, wildlife, coastal dunes, Anstey’s Beach, Bluff Durban
+
