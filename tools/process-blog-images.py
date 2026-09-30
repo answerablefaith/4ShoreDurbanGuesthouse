@@ -7,13 +7,17 @@ BLOG_DIR = ROOT / "assets" / "images" / "blog"
 BLOG_DIR.mkdir(parents=True, exist_ok=True)
 
 IMAGES = {
-    "IMG_2857.jpeg": "ansteys-beach-rocky-shoreline-bluff-durban",
-    "IMG_2859.jpeg": "ansteys-beach-tidal-pools-bluff-durban",
-    "IMG_2858.jpeg": "bluff-durban-rock-pools-ansteys-beach",
-    "IMG_2872.jpeg": "bluff-beachfront-paddling-pool-sunset-durban",
-    "IMG_2870.jpeg": "ansteys-beach-promenade-sunset-bluff-durban",
-    "IMG_2867.jpeg": "ansteys-beach-sunset-indian-ocean-bluff",
-    "IMG_2869.jpeg": "ansteys-beach-golden-hour-walk-bluff-durban",
+    "assets/images/IMG_2857.jpeg": "ansteys-beach-rocky-shoreline-bluff-durban",
+    "assets/images/IMG_2859.jpeg": "ansteys-beach-tidal-pools-bluff-durban",
+    "assets/images/IMG_2858.jpeg": "bluff-durban-rock-pools-ansteys-beach",
+    "assets/images/IMG_2872.jpeg": "bluff-beachfront-paddling-pool-sunset-durban",
+    "assets/images/IMG_2870.jpeg": "ansteys-beach-promenade-sunset-bluff-durban",
+    "assets/images/IMG_2867.jpeg": "ansteys-beach-sunset-indian-ocean-bluff",
+    "assets/images/IMG_2869.jpeg": "ansteys-beach-golden-hour-walk-bluff-durban",
+    "assets/images/blog/Pasted 30-09-2026 at 21.46.52.png": "double-rainbow-4shore-guesthouse-bluff-durban",
+    "assets/images/blog/Pasted 30-09-2026 at 21.47.55.png": "driftwood-ansteys-beach-bluff-durban",
+    "assets/images/blog/Pasted 30-09-2026 at 21.52.47.png": "ansteys-beach-sunset-anglers-bluff-durban",
+    "assets/images/blog/Pasted 30-09-2026 at 21.53.35.png": "heron-dunes-ansteys-beach-bluff-durban",
 }
 
 
@@ -47,8 +51,8 @@ def save_versions(source_path, slug):
 
 def main():
     processed = 0
-    for original_name, slug in IMAGES.items():
-        source_path = SOURCE_DIR / original_name
+    for source_name, slug in IMAGES.items():
+        source_path = ROOT / source_name
         if not source_path.exists():
             print(f"Skipped missing {source_path.relative_to(ROOT)}")
             continue
